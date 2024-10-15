@@ -1,8 +1,0 @@
-pycaret
-# pycaret==1.0.0
-streamlit
-joblib
-numpy
-scikit-learn
-pmdarima
-sktime
