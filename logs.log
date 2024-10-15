@@ -9253,3 +9253,212 @@ dtype: int64}]))),
 2024-10-15 19:49:09,016:INFO:Set up index.
 2024-10-15 19:57:40,099:INFO:Initializing load_model()
 2024-10-15 19:57:40,100:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-15 19:58:50,802:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-15 19:58:50,802:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-15 19:58:50,802:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-15 19:58:50,802:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-15 19:58:50,931:INFO:Initializing load_model()
+2024-10-15 19:58:50,931:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-15 19:59:25,460:INFO:Initializing load_model()
+2024-10-15 19:59:25,460:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-15 19:59:35,092:INFO:Initializing load_model()
+2024-10-15 19:59:35,092:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-15 19:59:39,067:INFO:Initializing predict_model()
+2024-10-15 19:59:39,067:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000023464F6D820>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker'],
+                                    transfor...
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000023460C2F700>)
+2024-10-15 19:59:39,067:INFO:Checking exceptions
+2024-10-15 19:59:39,067:INFO:Preloading libraries
+2024-10-15 19:59:39,068:INFO:Set up data.
+2024-10-15 19:59:39,073:INFO:Set up index.
+2024-10-15 20:00:09,573:INFO:Initializing load_model()
+2024-10-15 20:00:09,574:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-15 20:19:35,307:INFO:Initializing load_model()
+2024-10-15 20:19:35,308:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-15 20:19:43,871:INFO:Initializing load_model()
+2024-10-15 20:19:43,872:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-15 20:19:45,589:INFO:Initializing predict_model()
+2024-10-15 20:19:45,589:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000023464F6D370>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker'],
+                                    transfor...
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000023464F29790>)
+2024-10-15 20:19:45,589:INFO:Checking exceptions
+2024-10-15 20:19:45,589:INFO:Preloading libraries
+2024-10-15 20:19:45,589:INFO:Set up data.
+2024-10-15 20:19:45,593:INFO:Set up index.
+2024-10-15 21:31:08,792:INFO:Initializing load_model()
+2024-10-15 21:31:08,793:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-15 21:31:32,219:INFO:Initializing load_model()
+2024-10-15 21:31:32,219:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-15 21:31:34,105:INFO:Initializing load_model()
+2024-10-15 21:31:34,105:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-15 21:31:43,545:INFO:Initializing load_model()
+2024-10-15 21:31:43,546:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-15 21:32:02,065:INFO:Initializing load_model()
+2024-10-15 21:32:02,065:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-15 21:32:05,030:INFO:Initializing predict_model()
+2024-10-15 21:32:05,030:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002341E578D00>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker'],
+                                    transfor...
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002341E5C5F70>)
+2024-10-15 21:32:05,030:INFO:Checking exceptions
+2024-10-15 21:32:05,030:INFO:Preloading libraries
+2024-10-15 21:32:05,030:INFO:Set up data.
+2024-10-15 21:32:05,033:INFO:Set up index.
+2024-10-15 21:32:30,615:INFO:Initializing load_model()
+2024-10-15 21:32:30,615:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-15 21:32:41,553:INFO:Initializing load_model()
+2024-10-15 21:32:41,553:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-15 21:32:58,288:INFO:Initializing load_model()
+2024-10-15 21:32:58,289:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-15 21:33:00,715:INFO:Initializing predict_model()
+2024-10-15 21:33:00,715:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000023465236EE0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker'],
+                                    transfor...
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002341E813A60>)
+2024-10-15 21:33:00,716:INFO:Checking exceptions
+2024-10-15 21:33:00,716:INFO:Preloading libraries
+2024-10-15 21:33:00,716:INFO:Set up data.
+2024-10-15 21:33:00,720:INFO:Set up index.
+2024-10-15 21:36:14,671:INFO:Initializing load_model()
+2024-10-15 21:36:14,672:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-15 21:37:30,516:INFO:Initializing load_model()
+2024-10-15 21:37:30,516:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-15 21:37:42,756:INFO:Initializing load_model()
+2024-10-15 21:37:42,756:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-15 21:41:13,146:INFO:Initializing load_model()
+2024-10-15 21:41:13,147:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-15 21:41:15,016:INFO:Initializing predict_model()
+2024-10-15 21:41:15,016:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000023464EE1E50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker'],
+                                    transfor...
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002341E801C10>)
+2024-10-15 21:41:15,016:INFO:Checking exceptions
+2024-10-15 21:41:15,017:INFO:Preloading libraries
+2024-10-15 21:41:15,017:INFO:Set up data.
+2024-10-15 21:41:15,019:INFO:Set up index.
