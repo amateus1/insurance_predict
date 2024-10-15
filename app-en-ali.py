@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 # Adjusted the model path to the new project location
-model = load_model('/root/insurance_predict/deployment_28042020_v2.pkl')
+model = load_model('/root/insurance_predict/deployment_28042020_v2')
 
 def predict(model, input_df):
     predictions_df = predict_model(estimator=model, data=input_df)
