@@ -2,6 +2,9 @@ from pycaret.regression import load_model, predict_model
 import streamlit as st
 import pandas as pd
 import numpy as np
+import requests
+from PIL import Image
+from io import BytesIO
 
 # Adjusted the model path to the new project location
 model = load_model('/root/insurance_predict/deployment_28042020_v2')
@@ -17,6 +20,10 @@ def run():
     image = Image.open('https://s3.ap-east-1.amazonaws.com/employee-churn.optimops.ai/logo_v1.png')
     image_hospital = Image.open('https://s3.ap-east-1.amazonaws.com/employee-churn.optimops.ai/hospital.jpg')
 
+
+# Fetch the image from the URL
+    response = requests.get('https://s3.ap-east-1.amazonaws.com/employee-churn.optimops.ai/logo_v1.png')
+    image = Image.open(BytesIO(response.content))
     st.image(image, use_column_width=False)
 
     add_selectbox = st.sidebar.selectbox(
