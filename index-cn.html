@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Cost Prediction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 bg-light" style="padding-top: 20px;">
+                <h5>How would you like to predict?</h5>
+                <select class="form-select" aria-label="Prediction Mode">
+                    <option selected>Online</option>
+                </select>
+                
+                <div class="mt-4">
+                    <p class="text-info">This app is created to predict patient hospital charges</p>
+                </div>
+
+                <div class="mt-3">
+                    <a href="https://optimops.ai" class="btn btn-link">https://optimops.ai</a>
+                </div>
+                
+                <div class="mt-3">
+                    <img src="https://s3.ap-east-1.amazonaws.com/employee-churn.optimops.ai/logo_v1.png" alt="Hospital Image" class="img-fluid">
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-9">
+                <div class="text-center">
+                    <img src="https://s3.ap-east-1.amazonaws.com/employee-churn.optimops.ai/logo_v1.png" alt="OptimOps.ai" class="img-fluid" width="200">
+                    <h2 class="mt-4">Insurance Cost Prediction App</h2>
+                </div>
+                <form class="mt-5">
+                    <div class="row mb-3">
+                        <label for="age" class="col-sm-2 col-form-label">Age</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="age" value="25">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="gender" class="col-sm-2 col-form-label">Gender</label>
+                        <div class="col-sm-10">
+                            <select class="form-select" id="gender">
+                                <option value="male" selected>Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="bmi" class="col-sm-2 col-form-label">BMI</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="bmi" value="25">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="children" class="col-sm-2 col-form-label">Children</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="children" value="0">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="smoker" class="col-sm-2 col-form-label">Smoker</label>
+                        <div class="col-sm-10">
+                            <input type="checkbox" id="smoker">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="region" class="col-sm-2 col-form-label">Region</label>
+                        <div class="col-sm-10">
+                            <select class="form-select" id="region">
+                                <option value="southwest" selected>Southwest</option>
+                                <option value="northwest">Northwest</option>
+                                <option value="southeast">Southeast</option>
+                                <option value="northeast">Northeast</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button type="button" class="btn btn-primary">Predict</button>
+                    </div>
+                </form>
+                <div class="mt-5 text-center">
+                    <h4>The predicted cost is ¥ 7877.74</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

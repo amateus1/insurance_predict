@@ -1,0 +1,8 @@
+pycaret==3.0
+# pycaret==1.0.0
+streamlit
+joblib
+numpy
+scikit-learn
+pmdarima
+sktime
