@@ -15,11 +15,14 @@ def predict(model, input_df):
     return predictions
 
 def run():
-    
-# Fetch the image from the URL
+    # Fetch the logo image from the URL
     response = requests.get('https://s3.ap-east-1.amazonaws.com/employee-churn.optimops.ai/logo_v1.png')
     image = Image.open(BytesIO(response.content))
     st.image(image, use_column_width=False)
+
+    # Fetch the hospital image (ensure you replace the URL with the correct one)
+    response_hospital = requests.get('https://s3.ap-east-1.amazonaws.com/employee-churn.optimops.ai/hospital.jpg')
+    image_hospital = Image.open(BytesIO(response_hospital.content))
 
     add_selectbox = st.sidebar.selectbox(
         "How would you like to predict?",
