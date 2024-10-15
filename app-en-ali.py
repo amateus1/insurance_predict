@@ -15,12 +15,7 @@ def predict(model, input_df):
     return predictions
 
 def run():
-    from PIL import Image
-    # Update the image URL if needed, or load from local path
-    image = Image.open('https://s3.ap-east-1.amazonaws.com/employee-churn.optimops.ai/logo_v1.png')
-    image_hospital = Image.open('https://s3.ap-east-1.amazonaws.com/employee-churn.optimops.ai/hospital.jpg')
-
-
+    
 # Fetch the image from the URL
     response = requests.get('https://s3.ap-east-1.amazonaws.com/employee-churn.optimops.ai/logo_v1.png')
     image = Image.open(BytesIO(response.content))
