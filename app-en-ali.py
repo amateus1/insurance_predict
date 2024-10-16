@@ -1,10 +1,10 @@
-from pycaret.regression import load_model, predict_model
 import streamlit as st
 import pandas as pd
 import numpy as np
 import requests
 from PIL import Image
 from io import BytesIO
+from pycaret.regression import load_model, predict_model
 
 # Adjusted the model path to the new project location
 model = load_model('/root/insurance_predict/deployment_28042020_v2')
@@ -15,14 +15,16 @@ def predict(model, input_df):
     return predictions
 
 def run():
-    # Fetch the logo image from the URL
+    # Fetch the logo and hospital images from the URL
     response = requests.get('https://s3.ap-east-1.amazonaws.com/employee-churn.optimops.ai/logo_v1.png')
     image = Image.open(BytesIO(response.content))
     st.image(image, use_column_width=False)
 
-    # Fetch the hospital image (ensure you replace the URL with the correct one)
     response_hospital = requests.get('https://s3.ap-east-1.amazonaws.com/employee-churn.optimops.ai/hospital.jpg')
     image_hospital = Image.open(BytesIO(response_hospital.content))
+
+    response_pycaret_logo = requests.get('https://s3.ap-east-1.amazonaws.com/employee-churn.optimops.ai/logo.png')
+    image_pycaret_logo = Image.open(BytesIO(response_pycaret_logo.content))
 
     add_selectbox = st.sidebar.selectbox(
         "How would you like to predict?",
@@ -31,10 +33,12 @@ def run():
     st.sidebar.info('This app is created to predict patient hospital charges')
     st.sidebar.success('https://optimops.ai')
     st.sidebar.image(image_hospital)
+    st.sidebar.image(image_pycaret_logo)
 
     st.title("Insurance Charges Prediction App")
 
     if add_selectbox == 'Online':
+        # Your form elements
         age = st.number_input('Age', min_value=1, max_value=100, value=25)
         sex = st.selectbox('Sex', ['male', 'female'])
         bmi = st.number_input('BMI', min_value=10, max_value=50, value=10)
