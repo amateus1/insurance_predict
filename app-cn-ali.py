@@ -10,8 +10,6 @@ from io import BytesIO
 model = load_model('/root/insurance_predict/deployment_28042020_v2')
 
 def predict(model, input_df):
-    # Ensure consistent column names and map Chinese labels back to English column names
-    input_df.columns = ['age', 'sex', 'bmi', 'children', 'smoker', 'region']
     predictions_df = predict_model(estimator=model, data=input_df)
     predictions = predictions_df['prediction_label'][0]
     return predictions
@@ -22,13 +20,17 @@ def run():
     image = Image.open(BytesIO(response.content))
     st.image(image, use_column_width=False)
 
-    # Fetch the PyCaret logo
-    response_pycaret = requests.get('https://s3.ap-east-1.amazonaws.com/employee-churn.optimops.ai/logo.png')
-    image_pycaret = Image.open(BytesIO(response_pycaret.content))
-
     # Fetch the hospital image
     response_hospital = requests.get('https://s3.ap-east-1.amazonaws.com/employee-churn.optimops.ai/hospital.jpg')
     image_hospital = Image.open(BytesIO(response_hospital.content))
+
+    # Display hospital image and PyCaret logo
+    st.sidebar.image(image_hospital)
+    
+    # Fetch and display the PyCaret logo under the hospital image
+    response_pycaret = requests.get('https://s3.ap-east-1.amazonaws.com/employee-churn.optimops.ai/logo.png')
+    image_pycaret = Image.open(BytesIO(response_pycaret.content))
+    st.sidebar.image(image_pycaret)
 
     add_selectbox = st.sidebar.selectbox(
         "您想如何预测?",
@@ -36,7 +38,6 @@ def run():
 
     st.sidebar.info('此应用程序旨在预测患者的医院费用')
     st.sidebar.success('https://optimops.ai')
-    st.sidebar.image(image_hospital)
 
     st.title("保险费用预测应用程序")
 
@@ -48,20 +49,7 @@ def run():
         smoker = '是' if st.checkbox('吸烟者') else '否'
         region = st.selectbox('地区', ['西南', '西北', '东北', '东南'])
 
-        # Map the Chinese labels back to the expected English ones for the model
-        input_dict = {
-            'age': age,
-            'sex': 'male' if sex == '男性' else 'female',
-            'bmi': bmi,
-            'children': children,
-            'smoker': 'yes' if smoker == '是' else 'no',
-            'region': {
-                '西南': 'southwest',
-                '西北': 'northwest',
-                '东北': 'northeast',
-                '东南': 'southeast'
-            }[region]
-        }
+        input_dict = {'age': age, 'sex': sex, 'bmi': bmi, 'children': children, 'smoker': smoker, 'region': region}
         input_df = pd.DataFrame([input_dict])
 
         if st.button("预测"):
