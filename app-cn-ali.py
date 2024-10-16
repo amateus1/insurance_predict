@@ -11,6 +11,9 @@ model = load_model('/root/insurance_predict/deployment_28042020_v2')
 def predict(model, input_df):
     predictions_df = predict_model(estimator=model, data=input_df)
     predictions = predictions_df['prediction_label'][0]
+    # Ensure prediction is not negative
+    if predictions < 0:
+        predictions = 0
     return predictions
 
 def run():
