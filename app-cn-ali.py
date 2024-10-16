@@ -39,7 +39,8 @@ def run():
         sex = st.selectbox('性别', ['男性', '女性'])  # "Sex" -> "male", "female"
         bmi = st.number_input('BMI', min_value=10, max_value=50, value=10)
         children = st.selectbox('孩子数量', [0,1,2,3,4,5,6,7,8,9,10])  # "Children"
-        smoker = '是' if st.checkbox('吸烟者') else '否'  # "Smoker" -> yes/no
+        smoker = 'yes' if st.checkbox('吸烟者') else 'no'
+        #smoker = '是' if st.checkbox('吸烟者') else '否'  # "Smoker" -> yes/no
         region = st.selectbox('地区', ['西南', '西北', '东北', '东南'])  # "Region" -> regions in Chinese
 
         input_dict = {'age': age, 'sex': sex, 'bmi': bmi, 'children': children, 'smoker': smoker, 'region': region}
