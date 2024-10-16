@@ -1,7 +1,6 @@
 from pycaret.regression import load_model, predict_model
 import streamlit as st
 import pandas as pd
-import numpy as np
 import requests
 from PIL import Image
 from io import BytesIO
@@ -27,7 +26,6 @@ def run():
     # Display hospital image and PyCaret logo
     st.sidebar.image(image_hospital)
     
-    # Fetch and display the PyCaret logo under the hospital image
     response_pycaret = requests.get('https://s3.ap-east-1.amazonaws.com/employee-churn.optimops.ai/logo.png')
     image_pycaret = Image.open(BytesIO(response_pycaret.content))
     st.sidebar.image(image_pycaret)
@@ -46,10 +44,23 @@ def run():
         sex = st.selectbox('性别', ['男性', '女性'])
         bmi = st.number_input('BMI', min_value=10, max_value=50, value=10)
         children = st.selectbox('孩子数量', [0,1,2,3,4,5,6,7,8,9,10])
-        smoker = '是' if st.checkbox('吸烟者') else '否'
+        smoker = 'yes' if st.checkbox('吸烟者') else 'no'
         region = st.selectbox('地区', ['西南', '西北', '东北', '东南'])
 
-        input_dict = {'age': age, 'sex': sex, 'bmi': bmi, 'children': children, 'smoker': smoker, 'region': region}
+        # Map Chinese input to expected model input
+        sex_mapping = {'男性': 'male', '女性': 'female'}
+        smoker_mapping = {'是': 'yes', '否': 'no'}
+        region_mapping = {'西南': 'southwest', '西北': 'northwest', '东北': 'northeast', '东南': 'southeast'}
+
+        input_dict = {
+            'age': age, 
+            'sex': sex_mapping.get(sex), 
+            'bmi': bmi, 
+            'children': children, 
+            'smoker': smoker, 
+            'region': region_mapping.get(region)
+        }
+
         input_df = pd.DataFrame([input_dict])
 
         if st.button("预测"):
@@ -62,7 +73,7 @@ def run():
         st.dataframe(input_df)
 
     if add_selectbox == '批量':
-        file_upload = st.file_uploader("上传CSV文件进行批量预测", type=["csv"])
+        file_upload = st.file_uploader("上传 csv 文件进行批量预测", type=["csv"])
 
         if file_upload is not None:
             data = pd.read_csv(file_upload)
