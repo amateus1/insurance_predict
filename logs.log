@@ -9764,3 +9764,2559 @@ dtype: int64}]))),
                                                               use_cat_names=True))),
                 ('trained_model', LinearRegression(n_jobs=-1))])
 2024-10-15 22:53:12,587:INFO:save_model() successfully completed......................................
+2024-10-16 00:52:26,050:INFO:Initializing load_model()
+2024-10-16 00:52:26,050:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 00:52:31,409:INFO:Initializing load_model()
+2024-10-16 00:52:31,409:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 00:52:32,638:INFO:Initializing predict_model()
+2024-10-16 00:52:32,638:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000023465200A00>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker'],
+                                    transfor...
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000234672CBDC0>)
+2024-10-16 00:52:32,638:INFO:Checking exceptions
+2024-10-16 00:52:32,639:INFO:Preloading libraries
+2024-10-16 00:52:32,639:INFO:Set up data.
+2024-10-16 00:52:32,640:INFO:Set up index.
+2024-10-16 00:52:36,942:INFO:Initializing load_model()
+2024-10-16 00:52:36,942:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 00:52:37,605:INFO:Initializing load_model()
+2024-10-16 00:52:37,606:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 00:52:38,845:INFO:Initializing predict_model()
+2024-10-16 00:52:38,845:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002341E5472E0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker'],
+                                    transfor...
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002341E5D00D0>)
+2024-10-16 00:52:38,845:INFO:Checking exceptions
+2024-10-16 00:52:38,845:INFO:Preloading libraries
+2024-10-16 00:52:38,845:INFO:Set up data.
+2024-10-16 00:52:38,848:INFO:Set up index.
+2024-10-16 00:52:55,628:INFO:Initializing load_model()
+2024-10-16 00:52:55,630:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 00:52:56,892:INFO:Initializing predict_model()
+2024-10-16 00:52:56,892:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002341E798D90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker'],
+                                    transfor...
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002341E5D0430>)
+2024-10-16 00:52:56,892:INFO:Checking exceptions
+2024-10-16 00:52:56,892:INFO:Preloading libraries
+2024-10-16 00:52:56,892:INFO:Set up data.
+2024-10-16 00:52:56,895:INFO:Set up index.
+2024-10-16 00:53:02,845:INFO:Initializing load_model()
+2024-10-16 00:53:02,845:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 00:53:03,967:INFO:Initializing load_model()
+2024-10-16 00:53:03,967:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 00:53:05,220:INFO:Initializing predict_model()
+2024-10-16 00:53:05,220:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002346064AAF0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker'],
+                                    transfor...
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002341E5D04C0>)
+2024-10-16 00:53:05,220:INFO:Checking exceptions
+2024-10-16 00:53:05,220:INFO:Preloading libraries
+2024-10-16 00:53:05,222:INFO:Set up data.
+2024-10-16 00:53:05,224:INFO:Set up index.
+2024-10-16 00:53:11,613:INFO:Initializing load_model()
+2024-10-16 00:53:11,614:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 00:53:14,604:INFO:Initializing load_model()
+2024-10-16 00:53:14,604:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 00:53:16,274:INFO:Initializing predict_model()
+2024-10-16 00:53:16,274:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002341E7AD6A0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker'],
+                                    transfor...
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002341E5D0280>)
+2024-10-16 00:53:16,275:INFO:Checking exceptions
+2024-10-16 00:53:16,275:INFO:Preloading libraries
+2024-10-16 00:53:16,275:INFO:Set up data.
+2024-10-16 00:53:16,278:INFO:Set up index.
+2024-10-16 00:54:39,934:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-16 00:54:39,934:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-16 00:54:39,934:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-16 00:54:39,934:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-16 00:54:40,048:INFO:Initializing load_model()
+2024-10-16 00:54:40,048:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 00:54:49,787:INFO:Initializing load_model()
+2024-10-16 00:54:49,787:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 00:54:51,098:INFO:Initializing predict_model()
+2024-10-16 00:54:51,098:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001B1AECE25E0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker'],
+                                    transfor...
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001B1AEEFF820>)
+2024-10-16 00:54:51,098:INFO:Checking exceptions
+2024-10-16 00:54:51,098:INFO:Preloading libraries
+2024-10-16 00:54:51,098:INFO:Set up data.
+2024-10-16 00:54:51,101:INFO:Set up index.
+2024-10-16 00:54:56,200:INFO:Initializing load_model()
+2024-10-16 00:54:56,200:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 00:54:57,692:INFO:Initializing load_model()
+2024-10-16 00:54:57,693:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 00:54:59,294:INFO:Initializing predict_model()
+2024-10-16 00:54:59,294:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001B1AECE28B0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker'],
+                                    transfor...
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001B1AA9C9790>)
+2024-10-16 00:54:59,294:INFO:Checking exceptions
+2024-10-16 00:54:59,294:INFO:Preloading libraries
+2024-10-16 00:54:59,294:INFO:Set up data.
+2024-10-16 00:54:59,296:INFO:Set up index.
+2024-10-16 00:55:07,385:INFO:Initializing load_model()
+2024-10-16 00:55:07,386:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 00:55:08,190:INFO:Initializing load_model()
+2024-10-16 00:55:08,190:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 00:55:09,412:INFO:Initializing predict_model()
+2024-10-16 00:55:09,412:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001B1E83E7FA0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker'],
+                                    transfor...
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001B1AEF5DD30>)
+2024-10-16 00:55:09,412:INFO:Checking exceptions
+2024-10-16 00:55:09,413:INFO:Preloading libraries
+2024-10-16 00:55:09,413:INFO:Set up data.
+2024-10-16 00:55:09,416:INFO:Set up index.
+2024-10-16 00:56:29,476:INFO:Initializing load_model()
+2024-10-16 00:56:29,476:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 00:56:30,754:INFO:Initializing load_model()
+2024-10-16 00:56:30,755:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 00:56:31,987:INFO:Initializing predict_model()
+2024-10-16 00:56:31,987:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001B1E8187F70>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker'],
+                                    transfor...
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001B1E81FAE50>)
+2024-10-16 00:56:31,987:INFO:Checking exceptions
+2024-10-16 00:56:31,987:INFO:Preloading libraries
+2024-10-16 00:56:31,987:INFO:Set up data.
+2024-10-16 00:56:31,990:INFO:Set up index.
+2024-10-16 00:56:52,454:INFO:Initializing load_model()
+2024-10-16 00:56:52,454:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 00:56:55,464:INFO:Initializing load_model()
+2024-10-16 00:56:55,468:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 00:56:56,738:INFO:Initializing predict_model()
+2024-10-16 00:56:56,738:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001B1AC39CA90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker'],
+                                    transfor...
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001B1E8401A60>)
+2024-10-16 00:56:56,738:INFO:Checking exceptions
+2024-10-16 00:56:56,738:INFO:Preloading libraries
+2024-10-16 00:56:56,740:INFO:Set up data.
+2024-10-16 00:56:56,741:INFO:Set up index.
+2024-10-16 00:57:17,050:INFO:Initializing load_model()
+2024-10-16 00:57:17,052:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 00:57:18,397:INFO:Initializing load_model()
+2024-10-16 00:57:18,398:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 00:57:19,685:INFO:Initializing predict_model()
+2024-10-16 00:57:19,685:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001B1E879EC40>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker'],
+                                    transfor...
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001B1AA9C9700>)
+2024-10-16 00:57:19,686:INFO:Checking exceptions
+2024-10-16 00:57:19,686:INFO:Preloading libraries
+2024-10-16 00:57:19,686:INFO:Set up data.
+2024-10-16 00:57:19,688:INFO:Set up index.
+2024-10-16 00:58:55,566:INFO:Initializing load_model()
+2024-10-16 00:58:55,567:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 00:58:58,067:INFO:Initializing load_model()
+2024-10-16 00:58:58,067:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 00:59:05,040:INFO:Initializing load_model()
+2024-10-16 00:59:05,040:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 00:59:09,423:INFO:Initializing load_model()
+2024-10-16 00:59:09,424:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 00:59:10,149:INFO:Initializing load_model()
+2024-10-16 00:59:10,149:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 00:59:11,431:INFO:Initializing predict_model()
+2024-10-16 00:59:11,431:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001B1A745FF10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker'],
+                                    transfor...
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001B1E8401A60>)
+2024-10-16 00:59:11,431:INFO:Checking exceptions
+2024-10-16 00:59:11,431:INFO:Preloading libraries
+2024-10-16 00:59:11,431:INFO:Set up data.
+2024-10-16 00:59:11,433:INFO:Set up index.
+2024-10-16 00:59:15,687:INFO:Initializing load_model()
+2024-10-16 00:59:15,688:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 00:59:20,283:INFO:Initializing load_model()
+2024-10-16 00:59:20,283:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 00:59:21,508:INFO:Initializing predict_model()
+2024-10-16 00:59:21,508:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001B1AEB4DCA0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker'],
+                                    transfor...
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001B1AEF68160>)
+2024-10-16 00:59:21,508:INFO:Checking exceptions
+2024-10-16 00:59:21,508:INFO:Preloading libraries
+2024-10-16 00:59:21,509:INFO:Set up data.
+2024-10-16 00:59:21,512:INFO:Set up index.
+2024-10-16 00:59:50,110:INFO:Initializing load_model()
+2024-10-16 00:59:50,112:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 00:59:51,146:INFO:Initializing load_model()
+2024-10-16 00:59:51,146:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 00:59:53,005:INFO:Initializing predict_model()
+2024-10-16 00:59:53,005:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001B1E8209BB0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker'],
+                                    transfor...
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001B1AA9C9670>)
+2024-10-16 00:59:53,005:INFO:Checking exceptions
+2024-10-16 00:59:53,006:INFO:Preloading libraries
+2024-10-16 00:59:53,006:INFO:Set up data.
+2024-10-16 00:59:53,008:INFO:Set up index.
+2024-10-16 01:00:06,438:INFO:Initializing load_model()
+2024-10-16 01:00:06,438:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 01:00:07,815:INFO:Initializing load_model()
+2024-10-16 01:00:07,815:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 01:00:09,408:INFO:Initializing predict_model()
+2024-10-16 01:00:09,408:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001B1E83E7B50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker'],
+                                    transfor...
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001B1E8401A60>)
+2024-10-16 01:00:09,409:INFO:Checking exceptions
+2024-10-16 01:00:09,409:INFO:Preloading libraries
+2024-10-16 01:00:09,409:INFO:Set up data.
+2024-10-16 01:00:09,412:INFO:Set up index.
+2024-10-16 01:01:14,673:INFO:Initializing load_model()
+2024-10-16 01:01:14,673:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 01:01:14,852:INFO:Initializing load_model()
+2024-10-16 01:01:14,853:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 01:01:16,300:INFO:Initializing predict_model()
+2024-10-16 01:01:16,300:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001B1ACC92DF0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker'],
+                                    transfor...
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001B1AA9C9700>)
+2024-10-16 01:01:16,300:INFO:Checking exceptions
+2024-10-16 01:01:16,300:INFO:Preloading libraries
+2024-10-16 01:01:16,300:INFO:Set up data.
+2024-10-16 01:01:16,304:INFO:Set up index.
+2024-10-16 01:01:40,977:INFO:Initializing load_model()
+2024-10-16 01:01:40,978:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-16 01:01:43,542:INFO:Initializing load_model()
+2024-10-16 01:01:43,543:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2024-10-17 17:06:12,433:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-17 17:06:12,434:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-17 17:06:12,434:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-17 17:06:12,434:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-17 17:06:12,654:INFO:PyCaret RegressionExperiment
+2024-10-17 17:06:12,654:INFO:Logging name: reg-default-name
+2024-10-17 17:06:12,654:INFO:ML Usecase: MLUsecase.REGRESSION
+2024-10-17 17:06:12,654:INFO:version 3.2.0
+2024-10-17 17:06:12,654:INFO:Initializing setup()
+2024-10-17 17:06:12,654:INFO:self.USI: 1b6c
+2024-10-17 17:06:12,654:INFO:self._variable_keys: {'target_param', '_available_plots', 'data', 'fold_shuffle_param', 'fold_generator', 'transform_target_param', 'X_test', 'log_plots_param', 'memory', 'pipeline', 'seed', 'gpu_param', 'idx', 'y', 'gpu_n_jobs_param', 'fold_groups_param', 'USI', 'logging_param', 'n_jobs_param', 'exp_id', 'X_train', 'X', '_ml_usecase', 'html_param', 'y_train', 'y_test', 'exp_name_log'}
+2024-10-17 17:06:12,654:INFO:Checking environment
+2024-10-17 17:06:12,654:INFO:python_version: 3.8.20
+2024-10-17 17:06:12,655:INFO:python_build: ('default', 'Oct  3 2024 15:19:54')
+2024-10-17 17:06:12,655:INFO:machine: AMD64
+2024-10-17 17:06:12,668:INFO:platform: Windows-10-10.0.22631-SP0
+2024-10-17 17:06:12,681:INFO:Memory: svmem(total=34071240704, available=14470377472, percent=57.5, used=19600863232, free=14470377472)
+2024-10-17 17:06:12,682:INFO:Physical Core: 12
+2024-10-17 17:06:12,682:INFO:Logical Core: 16
+2024-10-17 17:06:12,682:INFO:Checking libraries
+2024-10-17 17:06:12,682:INFO:System:
+2024-10-17 17:06:12,682:INFO:    python: 3.8.20 (default, Oct  3 2024, 15:19:54) [MSC v.1929 64 bit (AMD64)]
+2024-10-17 17:06:12,682:INFO:executable: C:\ProgramData\anaconda3\envs\insurance-prod\python.exe
+2024-10-17 17:06:12,682:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-10-17 17:06:12,682:INFO:PyCaret required dependencies:
+2024-10-17 17:06:12,885:INFO:                 pip: 24.2
+2024-10-17 17:06:12,885:INFO:          setuptools: 75.1.0
+2024-10-17 17:06:12,885:INFO:             pycaret: 3.2.0
+2024-10-17 17:06:12,885:INFO:             IPython: 8.12.3
+2024-10-17 17:06:12,885:INFO:          ipywidgets: 8.1.5
+2024-10-17 17:06:12,885:INFO:                tqdm: 4.66.5
+2024-10-17 17:06:12,885:INFO:               numpy: 1.21.2
+2024-10-17 17:06:12,885:INFO:              pandas: 1.5.3
+2024-10-17 17:06:12,885:INFO:              jinja2: 3.1.4
+2024-10-17 17:06:12,885:INFO:               scipy: 1.10.1
+2024-10-17 17:06:12,885:INFO:              joblib: 1.0.0
+2024-10-17 17:06:12,885:INFO:             sklearn: 1.2.2
+2024-10-17 17:06:12,885:INFO:                pyod: 2.0.2
+2024-10-17 17:06:12,885:INFO:            imblearn: 0.12.4
+2024-10-17 17:06:12,885:INFO:   category_encoders: 2.6.4
+2024-10-17 17:06:12,885:INFO:            lightgbm: 4.5.0
+2024-10-17 17:06:12,885:INFO:               numba: 0.58.0
+2024-10-17 17:06:12,885:INFO:            requests: 2.32.3
+2024-10-17 17:06:12,886:INFO:          matplotlib: 3.6.0
+2024-10-17 17:06:12,886:INFO:          scikitplot: 0.3.7
+2024-10-17 17:06:12,886:INFO:         yellowbrick: 1.5
+2024-10-17 17:06:12,886:INFO:              plotly: 5.24.1
+2024-10-17 17:06:12,886:INFO:    plotly-resampler: Not installed
+2024-10-17 17:06:12,886:INFO:             kaleido: 0.2.1
+2024-10-17 17:06:12,886:INFO:           schemdraw: 0.15
+2024-10-17 17:06:12,886:INFO:         statsmodels: 0.14.1
+2024-10-17 17:06:12,886:INFO:              sktime: 0.21.1
+2024-10-17 17:06:12,886:INFO:               tbats: 1.1.3
+2024-10-17 17:06:12,886:INFO:            pmdarima: 2.0.4
+2024-10-17 17:06:12,886:INFO:              psutil: 6.0.0
+2024-10-17 17:06:12,886:INFO:          markupsafe: 2.1.5
+2024-10-17 17:06:12,886:INFO:             pickle5: Not installed
+2024-10-17 17:06:12,886:INFO:         cloudpickle: 3.1.0
+2024-10-17 17:06:12,886:INFO:         deprecation: 2.1.0
+2024-10-17 17:06:12,886:INFO:              xxhash: 3.5.0
+2024-10-17 17:06:12,886:INFO:           wurlitzer: Not installed
+2024-10-17 17:06:12,886:INFO:PyCaret optional dependencies:
+2024-10-17 17:06:12,988:INFO:                shap: Not installed
+2024-10-17 17:06:12,988:INFO:           interpret: Not installed
+2024-10-17 17:06:12,988:INFO:                umap: 0.5.6
+2024-10-17 17:06:12,989:INFO:     ydata_profiling: 4.5.1
+2024-10-17 17:06:12,989:INFO:  explainerdashboard: Not installed
+2024-10-17 17:06:12,989:INFO:             autoviz: Not installed
+2024-10-17 17:06:12,989:INFO:           fairlearn: Not installed
+2024-10-17 17:06:12,989:INFO:          deepchecks: Not installed
+2024-10-17 17:06:12,989:INFO:             xgboost: 2.1.1
+2024-10-17 17:06:12,989:INFO:            catboost: 1.2.7
+2024-10-17 17:06:12,989:INFO:              kmodes: 0.12.2
+2024-10-17 17:06:12,989:INFO:             mlxtend: 0.19.0
+2024-10-17 17:06:12,989:INFO:       statsforecast: Not installed
+2024-10-17 17:06:12,989:INFO:        tune_sklearn: Not installed
+2024-10-17 17:06:12,989:INFO:                 ray: Not installed
+2024-10-17 17:06:12,989:INFO:            hyperopt: Not installed
+2024-10-17 17:06:12,989:INFO:              optuna: Not installed
+2024-10-17 17:06:12,989:INFO:               skopt: Not installed
+2024-10-17 17:06:12,989:INFO:              mlflow: 2.17.0
+2024-10-17 17:06:12,989:INFO:              gradio: Not installed
+2024-10-17 17:06:12,990:INFO:             fastapi: Not installed
+2024-10-17 17:06:12,990:INFO:             uvicorn: Not installed
+2024-10-17 17:06:12,990:INFO:              m2cgen: Not installed
+2024-10-17 17:06:12,990:INFO:           evidently: Not installed
+2024-10-17 17:06:12,990:INFO:               fugue: Not installed
+2024-10-17 17:06:12,990:INFO:           streamlit: 1.39.0
+2024-10-17 17:06:12,990:INFO:             prophet: Not installed
+2024-10-17 17:06:12,990:INFO:None
+2024-10-17 17:06:12,990:INFO:Set up data.
+2024-10-17 17:06:13,003:INFO:Set up folding strategy.
+2024-10-17 17:06:13,003:INFO:Set up train/test split.
+2024-10-17 17:06:13,007:INFO:Set up index.
+2024-10-17 17:06:13,008:INFO:Assigning column types.
+2024-10-17 17:06:13,011:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-10-17 17:06:13,013:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-10-17 17:06:13,017:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-10-17 17:06:13,020:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-10-17 17:06:13,082:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-17 17:06:13,127:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-17 17:06:13,128:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-17 17:06:13,130:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-17 17:06:13,229:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-10-17 17:06:13,233:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-10-17 17:06:13,238:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-10-17 17:06:13,303:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-17 17:06:13,344:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-17 17:06:13,345:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-17 17:06:13,347:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-17 17:06:13,348:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2024-10-17 17:06:13,353:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-10-17 17:06:13,359:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-10-17 17:06:13,434:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-17 17:06:13,488:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-17 17:06:13,489:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-17 17:06:13,494:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-17 17:06:13,501:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-10-17 17:06:13,505:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-10-17 17:06:13,565:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-17 17:06:13,614:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-17 17:06:13,615:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-17 17:06:13,618:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-17 17:06:13,618:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2024-10-17 17:06:13,625:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-10-17 17:06:13,673:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-17 17:06:13,711:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-17 17:06:13,712:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-17 17:06:13,714:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-17 17:06:13,722:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-10-17 17:06:13,768:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-17 17:06:13,806:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-17 17:06:13,807:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-17 17:06:13,809:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-17 17:06:13,810:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2024-10-17 17:06:13,869:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-17 17:06:13,916:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-17 17:06:13,916:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-17 17:06:13,919:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-17 17:06:13,981:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-17 17:06:14,022:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-17 17:06:14,023:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-17 17:06:14,026:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-17 17:06:14,026:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-10-17 17:06:14,090:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-17 17:06:14,127:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-17 17:06:14,131:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-17 17:06:14,198:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-17 17:06:14,233:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-17 17:06:14,235:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-17 17:06:14,235:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2024-10-17 17:06:14,336:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-17 17:06:14,340:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-17 17:06:14,467:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-17 17:06:14,470:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-17 17:06:14,474:INFO:Preparing preprocessing pipeline...
+2024-10-17 17:06:14,474:INFO:Set up simple imputation.
+2024-10-17 17:06:14,477:INFO:Set up encoding of ordinal features.
+2024-10-17 17:06:14,479:INFO:Set up encoding of categorical features.
+2024-10-17 17:06:14,603:INFO:Finished creating preprocessing pipeline.
+2024-10-17 17:06:14,646:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\al\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrap...
+                                                                     'smoker'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True)))])
+2024-10-17 17:06:14,646:INFO:Creating final display dataframe.
+2024-10-17 17:06:14,921:INFO:Setup _display_container:                     Description             Value
+0                    Session id              2903
+1                        Target           charges
+2                   Target type        Regression
+3           Original data shape         (1338, 7)
+4        Transformed data shape        (1338, 10)
+5   Transformed train set shape         (936, 10)
+6    Transformed test set shape         (402, 10)
+7              Ordinal features                 2
+8              Numeric features                 3
+9          Categorical features                 3
+10                   Preprocess              True
+11              Imputation type            simple
+12           Numeric imputation              mean
+13       Categorical imputation              mode
+14     Maximum one-hot encoding                25
+15              Encoding method              None
+16               Fold Generator             KFold
+17                  Fold Number                10
+18                     CPU Jobs                -1
+19                      Use GPU             False
+20               Log Experiment             False
+21              Experiment Name  reg-default-name
+22                          USI              1b6c
+2024-10-17 17:06:15,012:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-17 17:06:15,015:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-17 17:06:15,112:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-17 17:06:15,114:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-17 17:06:15,115:INFO:setup() successfully completed in 2.47s...............
+2024-10-17 17:06:15,116:INFO:Initializing create_model()
+2024-10-17 17:06:15,116:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000166940875E0>, estimator=lr, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-10-17 17:06:15,116:INFO:Checking exceptions
+2024-10-17 17:06:15,119:INFO:Importing libraries
+2024-10-17 17:06:15,119:INFO:Copying training dataset
+2024-10-17 17:06:15,121:INFO:Defining folds
+2024-10-17 17:06:15,122:INFO:Declaring metric variables
+2024-10-17 17:06:15,122:INFO:Importing untrained model
+2024-10-17 17:06:15,122:INFO:Linear Regression Imported successfully
+2024-10-17 17:06:15,123:INFO:Starting cross validation
+2024-10-17 17:06:15,131:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-10-17 17:06:20,900:INFO:Calculating mean and std
+2024-10-17 17:06:20,901:INFO:Creating metrics dataframe
+2024-10-17 17:06:20,903:INFO:Finalizing model
+2024-10-17 17:06:20,950:INFO:Uploading results into container
+2024-10-17 17:06:20,950:INFO:Uploading model into container now
+2024-10-17 17:06:20,961:INFO:_master_model_container: 1
+2024-10-17 17:06:20,961:INFO:_display_container: 2
+2024-10-17 17:06:20,961:INFO:LinearRegression(n_jobs=-1)
+2024-10-17 17:06:20,962:INFO:create_model() successfully completed......................................
+2024-10-17 17:06:21,081:INFO:Initializing save_model()
+2024-10-17 17:06:21,081:INFO:save_model(model=LinearRegression(n_jobs=-1), model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\al\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrap...
+                                                                     'smoker'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True)))]), verbose=True, use_case=MLUsecase.REGRESSION, kwargs={})
+2024-10-17 17:06:21,081:INFO:Adding model into prep_pipe
+2024-10-17 17:06:21,089:INFO:D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2.pkl saved in current working directory
+2024-10-17 17:06:21,131:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker'],
+                                    transfor...
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', LinearRegression(n_jobs=-1))])
+2024-10-17 17:06:21,131:INFO:save_model() successfully completed......................................
+2024-10-18 10:07:00,314:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-18 10:07:00,314:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-18 10:07:00,314:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-18 10:07:00,314:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-18 10:07:00,492:INFO:PyCaret RegressionExperiment
+2024-10-18 10:07:00,492:INFO:Logging name: reg-default-name
+2024-10-18 10:07:00,492:INFO:ML Usecase: MLUsecase.REGRESSION
+2024-10-18 10:07:00,492:INFO:version 3.2.0
+2024-10-18 10:07:00,492:INFO:Initializing setup()
+2024-10-18 10:07:00,492:INFO:self.USI: eca8
+2024-10-18 10:07:00,492:INFO:self._variable_keys: {'transform_target_param', 'n_jobs_param', 'html_param', 'gpu_param', 'target_param', 'fold_groups_param', 'y_train', 'seed', 'memory', 'exp_name_log', 'y_test', 'fold_shuffle_param', 'X_train', 'gpu_n_jobs_param', 'log_plots_param', '_ml_usecase', '_available_plots', 'USI', 'data', 'X', 'logging_param', 'pipeline', 'X_test', 'fold_generator', 'idx', 'exp_id', 'y'}
+2024-10-18 10:07:00,492:INFO:Checking environment
+2024-10-18 10:07:00,492:INFO:python_version: 3.8.20
+2024-10-18 10:07:00,493:INFO:python_build: ('default', 'Oct  3 2024 15:19:54')
+2024-10-18 10:07:00,493:INFO:machine: AMD64
+2024-10-18 10:07:00,506:INFO:platform: Windows-10-10.0.22631-SP0
+2024-10-18 10:07:00,517:INFO:Memory: svmem(total=34071240704, available=12111200256, percent=64.5, used=21960040448, free=12111200256)
+2024-10-18 10:07:00,518:INFO:Physical Core: 12
+2024-10-18 10:07:00,518:INFO:Logical Core: 16
+2024-10-18 10:07:00,518:INFO:Checking libraries
+2024-10-18 10:07:00,518:INFO:System:
+2024-10-18 10:07:00,518:INFO:    python: 3.8.20 (default, Oct  3 2024, 15:19:54) [MSC v.1929 64 bit (AMD64)]
+2024-10-18 10:07:00,518:INFO:executable: C:\ProgramData\anaconda3\envs\insurance-prod\python.exe
+2024-10-18 10:07:00,518:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-10-18 10:07:00,518:INFO:PyCaret required dependencies:
+2024-10-18 10:07:00,621:INFO:                 pip: 24.2
+2024-10-18 10:07:00,622:INFO:          setuptools: 75.1.0
+2024-10-18 10:07:00,622:INFO:             pycaret: 3.2.0
+2024-10-18 10:07:00,622:INFO:             IPython: 8.12.3
+2024-10-18 10:07:00,622:INFO:          ipywidgets: 8.1.5
+2024-10-18 10:07:00,622:INFO:                tqdm: 4.66.5
+2024-10-18 10:07:00,622:INFO:               numpy: 1.21.2
+2024-10-18 10:07:00,622:INFO:              pandas: 1.5.3
+2024-10-18 10:07:00,622:INFO:              jinja2: 3.1.4
+2024-10-18 10:07:00,622:INFO:               scipy: 1.10.1
+2024-10-18 10:07:00,622:INFO:              joblib: 1.0.0
+2024-10-18 10:07:00,622:INFO:             sklearn: 1.2.2
+2024-10-18 10:07:00,622:INFO:                pyod: 2.0.2
+2024-10-18 10:07:00,622:INFO:            imblearn: 0.12.4
+2024-10-18 10:07:00,622:INFO:   category_encoders: 2.6.4
+2024-10-18 10:07:00,622:INFO:            lightgbm: 4.5.0
+2024-10-18 10:07:00,622:INFO:               numba: 0.58.0
+2024-10-18 10:07:00,622:INFO:            requests: 2.32.3
+2024-10-18 10:07:00,622:INFO:          matplotlib: 3.6.0
+2024-10-18 10:07:00,622:INFO:          scikitplot: 0.3.7
+2024-10-18 10:07:00,622:INFO:         yellowbrick: 1.5
+2024-10-18 10:07:00,622:INFO:              plotly: 5.24.1
+2024-10-18 10:07:00,622:INFO:    plotly-resampler: Not installed
+2024-10-18 10:07:00,622:INFO:             kaleido: 0.2.1
+2024-10-18 10:07:00,623:INFO:           schemdraw: 0.15
+2024-10-18 10:07:00,623:INFO:         statsmodels: 0.14.1
+2024-10-18 10:07:00,623:INFO:              sktime: 0.21.1
+2024-10-18 10:07:00,623:INFO:               tbats: 1.1.3
+2024-10-18 10:07:00,623:INFO:            pmdarima: 2.0.4
+2024-10-18 10:07:00,623:INFO:              psutil: 6.0.0
+2024-10-18 10:07:00,623:INFO:          markupsafe: 2.1.5
+2024-10-18 10:07:00,623:INFO:             pickle5: Not installed
+2024-10-18 10:07:00,623:INFO:         cloudpickle: 3.1.0
+2024-10-18 10:07:00,623:INFO:         deprecation: 2.1.0
+2024-10-18 10:07:00,623:INFO:              xxhash: 3.5.0
+2024-10-18 10:07:00,623:INFO:           wurlitzer: Not installed
+2024-10-18 10:07:00,623:INFO:PyCaret optional dependencies:
+2024-10-18 10:07:00,698:INFO:                shap: Not installed
+2024-10-18 10:07:00,698:INFO:           interpret: Not installed
+2024-10-18 10:07:00,698:INFO:                umap: 0.5.6
+2024-10-18 10:07:00,698:INFO:     ydata_profiling: 4.5.1
+2024-10-18 10:07:00,698:INFO:  explainerdashboard: Not installed
+2024-10-18 10:07:00,698:INFO:             autoviz: Not installed
+2024-10-18 10:07:00,698:INFO:           fairlearn: Not installed
+2024-10-18 10:07:00,698:INFO:          deepchecks: Not installed
+2024-10-18 10:07:00,699:INFO:             xgboost: 2.1.1
+2024-10-18 10:07:00,699:INFO:            catboost: 1.2.7
+2024-10-18 10:07:00,699:INFO:              kmodes: 0.12.2
+2024-10-18 10:07:00,699:INFO:             mlxtend: 0.19.0
+2024-10-18 10:07:00,699:INFO:       statsforecast: Not installed
+2024-10-18 10:07:00,699:INFO:        tune_sklearn: Not installed
+2024-10-18 10:07:00,699:INFO:                 ray: Not installed
+2024-10-18 10:07:00,699:INFO:            hyperopt: Not installed
+2024-10-18 10:07:00,699:INFO:              optuna: Not installed
+2024-10-18 10:07:00,699:INFO:               skopt: Not installed
+2024-10-18 10:07:00,699:INFO:              mlflow: 2.17.0
+2024-10-18 10:07:00,699:INFO:              gradio: Not installed
+2024-10-18 10:07:00,699:INFO:             fastapi: Not installed
+2024-10-18 10:07:00,699:INFO:             uvicorn: Not installed
+2024-10-18 10:07:00,699:INFO:              m2cgen: Not installed
+2024-10-18 10:07:00,699:INFO:           evidently: Not installed
+2024-10-18 10:07:00,699:INFO:               fugue: Not installed
+2024-10-18 10:07:00,699:INFO:           streamlit: 1.39.0
+2024-10-18 10:07:00,699:INFO:             prophet: Not installed
+2024-10-18 10:07:00,699:INFO:None
+2024-10-18 10:07:00,699:INFO:Set up data.
+2024-10-18 10:07:00,711:INFO:Set up folding strategy.
+2024-10-18 10:07:00,712:INFO:Set up train/test split.
+2024-10-18 10:07:00,715:INFO:Set up index.
+2024-10-18 10:07:00,716:INFO:Assigning column types.
+2024-10-18 10:07:00,717:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-10-18 10:07:00,717:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-10-18 10:07:00,721:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-10-18 10:07:00,724:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-10-18 10:07:00,767:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-18 10:07:00,795:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-18 10:07:00,795:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-18 10:07:00,797:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-18 10:07:00,973:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-10-18 10:07:00,977:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-10-18 10:07:00,980:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-10-18 10:07:01,016:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-18 10:07:01,043:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-18 10:07:01,044:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-18 10:07:01,046:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-18 10:07:01,046:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2024-10-18 10:07:01,049:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-10-18 10:07:01,052:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-10-18 10:07:01,085:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-18 10:07:01,116:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-18 10:07:01,117:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-18 10:07:01,119:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-18 10:07:01,122:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-10-18 10:07:01,125:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-10-18 10:07:01,178:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-18 10:07:01,214:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-18 10:07:01,215:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-18 10:07:01,217:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-18 10:07:01,218:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2024-10-18 10:07:01,227:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-10-18 10:07:01,271:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-18 10:07:01,305:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-18 10:07:01,305:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-18 10:07:01,308:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-18 10:07:01,316:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-10-18 10:07:01,367:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-18 10:07:01,402:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-18 10:07:01,402:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-18 10:07:01,404:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-18 10:07:01,405:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2024-10-18 10:07:01,459:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-18 10:07:01,502:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-18 10:07:01,503:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-18 10:07:01,507:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-18 10:07:01,563:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-18 10:07:01,591:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-18 10:07:01,592:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-18 10:07:01,593:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-18 10:07:01,593:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-10-18 10:07:01,633:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-18 10:07:01,662:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-18 10:07:01,663:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-18 10:07:01,705:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-18 10:07:01,731:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-18 10:07:01,733:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-18 10:07:01,734:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2024-10-18 10:07:01,801:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-18 10:07:01,803:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-18 10:07:01,877:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-18 10:07:01,878:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-18 10:07:01,881:INFO:Preparing preprocessing pipeline...
+2024-10-18 10:07:01,881:INFO:Set up simple imputation.
+2024-10-18 10:07:01,883:INFO:Set up encoding of ordinal features.
+2024-10-18 10:07:01,884:INFO:Set up encoding of categorical features.
+2024-10-18 10:07:02,008:INFO:Finished creating preprocessing pipeline.
+2024-10-18 10:07:02,059:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\al\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrap...
+                                                                     'smoker'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True)))])
+2024-10-18 10:07:02,060:INFO:Creating final display dataframe.
+2024-10-18 10:07:02,306:INFO:Setup _display_container:                     Description             Value
+0                    Session id               222
+1                        Target           charges
+2                   Target type        Regression
+3           Original data shape         (1338, 7)
+4        Transformed data shape        (1338, 10)
+5   Transformed train set shape         (936, 10)
+6    Transformed test set shape         (402, 10)
+7              Ordinal features                 2
+8              Numeric features                 3
+9          Categorical features                 3
+10                   Preprocess              True
+11              Imputation type            simple
+12           Numeric imputation              mean
+13       Categorical imputation              mode
+14     Maximum one-hot encoding                25
+15              Encoding method              None
+16               Fold Generator             KFold
+17                  Fold Number                10
+18                     CPU Jobs                -1
+19                      Use GPU             False
+20               Log Experiment             False
+21              Experiment Name  reg-default-name
+22                          USI              eca8
+2024-10-18 10:07:02,378:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-18 10:07:02,379:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-18 10:07:02,450:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-18 10:07:02,457:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-18 10:07:02,458:INFO:setup() successfully completed in 1.97s...............
+2024-10-18 10:07:02,460:INFO:Initializing create_model()
+2024-10-18 10:07:02,460:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000023A091B75E0>, estimator=lr, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-10-18 10:07:02,460:INFO:Checking exceptions
+2024-10-18 10:07:02,466:INFO:Importing libraries
+2024-10-18 10:07:02,466:INFO:Copying training dataset
+2024-10-18 10:07:02,471:INFO:Defining folds
+2024-10-18 10:07:02,472:INFO:Declaring metric variables
+2024-10-18 10:07:02,472:INFO:Importing untrained model
+2024-10-18 10:07:02,473:INFO:Linear Regression Imported successfully
+2024-10-18 10:07:02,473:INFO:Starting cross validation
+2024-10-18 10:07:02,484:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-10-18 10:07:07,562:INFO:Calculating mean and std
+2024-10-18 10:07:07,563:INFO:Creating metrics dataframe
+2024-10-18 10:07:07,567:INFO:Finalizing model
+2024-10-18 10:07:07,614:INFO:Uploading results into container
+2024-10-18 10:07:07,615:INFO:Uploading model into container now
+2024-10-18 10:07:07,621:INFO:_master_model_container: 1
+2024-10-18 10:07:07,622:INFO:_display_container: 2
+2024-10-18 10:07:07,622:INFO:LinearRegression(n_jobs=-1)
+2024-10-18 10:07:07,622:INFO:create_model() successfully completed......................................
+2024-10-18 10:07:07,724:INFO:Initializing save_model()
+2024-10-18 10:07:07,724:INFO:save_model(model=LinearRegression(n_jobs=-1), model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\al\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrap...
+                                                                     'smoker'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True)))]), verbose=True, use_case=MLUsecase.REGRESSION, kwargs={})
+2024-10-18 10:07:07,724:INFO:Adding model into prep_pipe
+2024-10-18 10:07:07,729:INFO:D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2.pkl saved in current working directory
+2024-10-18 10:07:07,759:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker'],
+                                    transfor...
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', LinearRegression(n_jobs=-1))])
+2024-10-18 10:07:07,759:INFO:save_model() successfully completed......................................
+2024-10-18 10:37:27,592:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-18 10:37:27,592:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-18 10:37:27,592:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-18 10:37:27,592:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-18 10:37:27,748:INFO:PyCaret RegressionExperiment
+2024-10-18 10:37:27,748:INFO:Logging name: reg-default-name
+2024-10-18 10:37:27,748:INFO:ML Usecase: MLUsecase.REGRESSION
+2024-10-18 10:37:27,748:INFO:version 3.2.0
+2024-10-18 10:37:27,748:INFO:Initializing setup()
+2024-10-18 10:37:27,748:INFO:self.USI: fe66
+2024-10-18 10:37:27,748:INFO:self._variable_keys: {'exp_name_log', 'transform_target_param', 'seed', 'data', 'gpu_n_jobs_param', 'pipeline', 'y_test', 'y_train', 'logging_param', 'memory', 'fold_generator', 'idx', 'target_param', 'y', '_ml_usecase', 'gpu_param', 'fold_groups_param', 'X_test', 'X_train', 'log_plots_param', 'USI', 'n_jobs_param', 'X', 'html_param', '_available_plots', 'exp_id', 'fold_shuffle_param'}
+2024-10-18 10:37:27,748:INFO:Checking environment
+2024-10-18 10:37:27,748:INFO:python_version: 3.8.20
+2024-10-18 10:37:27,749:INFO:python_build: ('default', 'Oct  3 2024 15:19:54')
+2024-10-18 10:37:27,749:INFO:machine: AMD64
+2024-10-18 10:37:27,768:INFO:platform: Windows-10-10.0.22631-SP0
+2024-10-18 10:37:27,780:INFO:Memory: svmem(total=34071240704, available=10378797056, percent=69.5, used=23692443648, free=10378797056)
+2024-10-18 10:37:27,781:INFO:Physical Core: 12
+2024-10-18 10:37:27,781:INFO:Logical Core: 16
+2024-10-18 10:37:27,781:INFO:Checking libraries
+2024-10-18 10:37:27,781:INFO:System:
+2024-10-18 10:37:27,781:INFO:    python: 3.8.20 (default, Oct  3 2024, 15:19:54) [MSC v.1929 64 bit (AMD64)]
+2024-10-18 10:37:27,781:INFO:executable: C:\ProgramData\anaconda3\envs\insurance-prod\python.exe
+2024-10-18 10:37:27,781:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-10-18 10:37:27,781:INFO:PyCaret required dependencies:
+2024-10-18 10:37:27,913:INFO:                 pip: 24.2
+2024-10-18 10:37:27,914:INFO:          setuptools: 75.1.0
+2024-10-18 10:37:27,914:INFO:             pycaret: 3.2.0
+2024-10-18 10:37:27,914:INFO:             IPython: 8.12.3
+2024-10-18 10:37:27,914:INFO:          ipywidgets: 8.1.5
+2024-10-18 10:37:27,914:INFO:                tqdm: 4.66.5
+2024-10-18 10:37:27,914:INFO:               numpy: 1.21.2
+2024-10-18 10:37:27,914:INFO:              pandas: 1.5.3
+2024-10-18 10:37:27,914:INFO:              jinja2: 3.1.4
+2024-10-18 10:37:27,914:INFO:               scipy: 1.10.1
+2024-10-18 10:37:27,914:INFO:              joblib: 1.0.0
+2024-10-18 10:37:27,914:INFO:             sklearn: 1.2.2
+2024-10-18 10:37:27,914:INFO:                pyod: 2.0.2
+2024-10-18 10:37:27,914:INFO:            imblearn: 0.12.4
+2024-10-18 10:37:27,914:INFO:   category_encoders: 2.6.4
+2024-10-18 10:37:27,914:INFO:            lightgbm: 4.5.0
+2024-10-18 10:37:27,914:INFO:               numba: 0.58.0
+2024-10-18 10:37:27,915:INFO:            requests: 2.32.3
+2024-10-18 10:37:27,915:INFO:          matplotlib: 3.6.0
+2024-10-18 10:37:27,915:INFO:          scikitplot: 0.3.7
+2024-10-18 10:37:27,915:INFO:         yellowbrick: 1.5
+2024-10-18 10:37:27,915:INFO:              plotly: 5.24.1
+2024-10-18 10:37:27,915:INFO:    plotly-resampler: Not installed
+2024-10-18 10:37:27,915:INFO:             kaleido: 0.2.1
+2024-10-18 10:37:27,915:INFO:           schemdraw: 0.15
+2024-10-18 10:37:27,915:INFO:         statsmodels: 0.14.1
+2024-10-18 10:37:27,915:INFO:              sktime: 0.21.1
+2024-10-18 10:37:27,915:INFO:               tbats: 1.1.3
+2024-10-18 10:37:27,915:INFO:            pmdarima: 2.0.4
+2024-10-18 10:37:27,915:INFO:              psutil: 6.0.0
+2024-10-18 10:37:27,915:INFO:          markupsafe: 2.1.5
+2024-10-18 10:37:27,915:INFO:             pickle5: Not installed
+2024-10-18 10:37:27,915:INFO:         cloudpickle: 3.1.0
+2024-10-18 10:37:27,915:INFO:         deprecation: 2.1.0
+2024-10-18 10:37:27,915:INFO:              xxhash: 3.5.0
+2024-10-18 10:37:27,915:INFO:           wurlitzer: Not installed
+2024-10-18 10:37:27,915:INFO:PyCaret optional dependencies:
+2024-10-18 10:37:28,016:INFO:                shap: Not installed
+2024-10-18 10:37:28,017:INFO:           interpret: Not installed
+2024-10-18 10:37:28,017:INFO:                umap: 0.5.6
+2024-10-18 10:37:28,017:INFO:     ydata_profiling: 4.5.1
+2024-10-18 10:37:28,017:INFO:  explainerdashboard: Not installed
+2024-10-18 10:37:28,017:INFO:             autoviz: Not installed
+2024-10-18 10:37:28,017:INFO:           fairlearn: Not installed
+2024-10-18 10:37:28,017:INFO:          deepchecks: Not installed
+2024-10-18 10:37:28,017:INFO:             xgboost: 2.1.1
+2024-10-18 10:37:28,017:INFO:            catboost: 1.2.7
+2024-10-18 10:37:28,017:INFO:              kmodes: 0.12.2
+2024-10-18 10:37:28,017:INFO:             mlxtend: 0.19.0
+2024-10-18 10:37:28,017:INFO:       statsforecast: Not installed
+2024-10-18 10:37:28,017:INFO:        tune_sklearn: Not installed
+2024-10-18 10:37:28,017:INFO:                 ray: Not installed
+2024-10-18 10:37:28,017:INFO:            hyperopt: Not installed
+2024-10-18 10:37:28,017:INFO:              optuna: Not installed
+2024-10-18 10:37:28,017:INFO:               skopt: Not installed
+2024-10-18 10:37:28,017:INFO:              mlflow: 2.17.0
+2024-10-18 10:37:28,017:INFO:              gradio: Not installed
+2024-10-18 10:37:28,017:INFO:             fastapi: Not installed
+2024-10-18 10:37:28,017:INFO:             uvicorn: Not installed
+2024-10-18 10:37:28,017:INFO:              m2cgen: Not installed
+2024-10-18 10:37:28,017:INFO:           evidently: Not installed
+2024-10-18 10:37:28,017:INFO:               fugue: Not installed
+2024-10-18 10:37:28,017:INFO:           streamlit: 1.39.0
+2024-10-18 10:37:28,017:INFO:             prophet: Not installed
+2024-10-18 10:37:28,017:INFO:None
+2024-10-18 10:37:28,017:INFO:Set up data.
+2024-10-18 10:37:28,024:INFO:Set up folding strategy.
+2024-10-18 10:37:28,024:INFO:Set up train/test split.
+2024-10-18 10:37:28,032:INFO:Set up index.
+2024-10-18 10:37:28,032:INFO:Assigning column types.
+2024-10-18 10:37:28,035:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-10-18 10:37:28,035:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-10-18 10:37:28,039:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-10-18 10:37:28,043:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-10-18 10:37:28,083:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-18 10:37:28,116:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-18 10:37:28,117:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-18 10:37:28,118:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-18 10:37:28,159:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-10-18 10:37:28,163:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-10-18 10:37:28,168:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-10-18 10:37:28,210:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-18 10:37:28,242:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-18 10:37:28,242:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-18 10:37:28,243:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-18 10:37:28,245:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2024-10-18 10:37:28,248:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-10-18 10:37:28,250:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-10-18 10:37:28,293:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-18 10:37:28,322:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-18 10:37:28,323:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-18 10:37:28,325:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-18 10:37:28,331:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-10-18 10:37:28,333:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-10-18 10:37:28,371:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-18 10:37:28,400:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-18 10:37:28,401:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-18 10:37:28,403:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-18 10:37:28,403:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2024-10-18 10:37:28,409:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-10-18 10:37:28,445:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-18 10:37:28,471:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-18 10:37:28,471:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-18 10:37:28,473:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-18 10:37:28,479:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-10-18 10:37:28,516:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-18 10:37:28,543:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-18 10:37:28,545:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-18 10:37:28,547:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-18 10:37:28,547:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2024-10-18 10:37:28,592:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-18 10:37:28,620:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-18 10:37:28,621:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-18 10:37:28,623:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-18 10:37:28,671:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-18 10:37:28,699:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-18 10:37:28,699:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-18 10:37:28,701:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-18 10:37:28,701:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-10-18 10:37:28,744:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-18 10:37:28,785:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-18 10:37:28,787:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-18 10:37:28,837:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-18 10:37:28,866:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-18 10:37:28,867:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-18 10:37:28,868:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2024-10-18 10:37:28,942:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-18 10:37:28,944:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-18 10:37:29,017:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-18 10:37:29,020:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-18 10:37:29,024:INFO:Preparing preprocessing pipeline...
+2024-10-18 10:37:29,024:INFO:Set up simple imputation.
+2024-10-18 10:37:29,029:INFO:Set up encoding of ordinal features.
+2024-10-18 10:37:29,031:INFO:Set up encoding of categorical features.
+2024-10-18 10:37:29,099:INFO:Finished creating preprocessing pipeline.
+2024-10-18 10:37:29,131:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\al\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrap...
+                                                                     'smoker'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True)))])
+2024-10-18 10:37:29,131:INFO:Creating final display dataframe.
+2024-10-18 10:37:29,314:INFO:Setup _display_container:                     Description             Value
+0                    Session id               369
+1                        Target           charges
+2                   Target type        Regression
+3           Original data shape         (1338, 7)
+4        Transformed data shape        (1338, 10)
+5   Transformed train set shape         (936, 10)
+6    Transformed test set shape         (402, 10)
+7              Ordinal features                 2
+8              Numeric features                 3
+9          Categorical features                 3
+10                   Preprocess              True
+11              Imputation type            simple
+12           Numeric imputation              mean
+13       Categorical imputation              mode
+14     Maximum one-hot encoding                25
+15              Encoding method              None
+16               Fold Generator             KFold
+17                  Fold Number                10
+18                     CPU Jobs                -1
+19                      Use GPU             False
+20               Log Experiment             False
+21              Experiment Name  reg-default-name
+22                          USI              fe66
+2024-10-18 10:37:29,418:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-18 10:37:29,421:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-18 10:37:29,510:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-18 10:37:29,512:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-18 10:37:29,513:INFO:setup() successfully completed in 1.77s...............
+2024-10-18 10:37:29,514:INFO:Initializing create_model()
+2024-10-18 10:37:29,514:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001455AF375E0>, estimator=lr, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-10-18 10:37:29,514:INFO:Checking exceptions
+2024-10-18 10:37:29,516:INFO:Importing libraries
+2024-10-18 10:37:29,516:INFO:Copying training dataset
+2024-10-18 10:37:29,521:INFO:Defining folds
+2024-10-18 10:37:29,521:INFO:Declaring metric variables
+2024-10-18 10:37:29,522:INFO:Importing untrained model
+2024-10-18 10:37:29,522:INFO:Linear Regression Imported successfully
+2024-10-18 10:37:29,522:INFO:Starting cross validation
+2024-10-18 10:37:29,532:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-10-18 10:37:36,415:INFO:Calculating mean and std
+2024-10-18 10:37:36,416:INFO:Creating metrics dataframe
+2024-10-18 10:37:36,420:INFO:Finalizing model
+2024-10-18 10:37:36,507:INFO:Uploading results into container
+2024-10-18 10:37:36,508:INFO:Uploading model into container now
+2024-10-18 10:37:36,520:INFO:_master_model_container: 1
+2024-10-18 10:37:36,520:INFO:_display_container: 2
+2024-10-18 10:37:36,520:INFO:LinearRegression(n_jobs=-1)
+2024-10-18 10:37:36,520:INFO:create_model() successfully completed......................................
+2024-10-18 10:37:36,729:INFO:Initializing save_model()
+2024-10-18 10:37:36,729:INFO:save_model(model=LinearRegression(n_jobs=-1), model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\al\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrap...
+                                                                     'smoker'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True)))]), verbose=True, use_case=MLUsecase.REGRESSION, kwargs={})
+2024-10-18 10:37:36,729:INFO:Adding model into prep_pipe
+2024-10-18 10:37:36,748:INFO:D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2.pkl saved in current working directory
+2024-10-18 10:37:36,849:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker'],
+                                    transfor...
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', LinearRegression(n_jobs=-1))])
+2024-10-18 10:37:36,849:INFO:save_model() successfully completed......................................
+2024-10-28 15:56:22,679:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-28 15:56:22,679:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-28 15:56:22,679:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-28 15:56:22,679:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-28 15:56:22,860:INFO:PyCaret RegressionExperiment
+2024-10-28 15:56:22,860:INFO:Logging name: reg-default-name
+2024-10-28 15:56:22,860:INFO:ML Usecase: MLUsecase.REGRESSION
+2024-10-28 15:56:22,860:INFO:version 3.2.0
+2024-10-28 15:56:22,860:INFO:Initializing setup()
+2024-10-28 15:56:22,860:INFO:self.USI: 5460
+2024-10-28 15:56:22,860:INFO:self._variable_keys: {'USI', 'idx', 'target_param', 'n_jobs_param', 'fold_shuffle_param', 'data', 'fold_groups_param', 'exp_id', 'y', 'transform_target_param', 'gpu_param', 'exp_name_log', 'logging_param', '_available_plots', '_ml_usecase', 'seed', 'y_test', 'memory', 'log_plots_param', 'fold_generator', 'X_test', 'y_train', 'pipeline', 'html_param', 'X', 'gpu_n_jobs_param', 'X_train'}
+2024-10-28 15:56:22,860:INFO:Checking environment
+2024-10-28 15:56:22,860:INFO:python_version: 3.8.20
+2024-10-28 15:56:22,860:INFO:python_build: ('default', 'Oct  3 2024 15:19:54')
+2024-10-28 15:56:22,860:INFO:machine: AMD64
+2024-10-28 15:56:22,868:INFO:platform: Windows-10-10.0.22631-SP0
+2024-10-28 15:56:22,875:INFO:Memory: svmem(total=34071240704, available=19647401984, percent=42.3, used=14423838720, free=19647401984)
+2024-10-28 15:56:22,876:INFO:Physical Core: 12
+2024-10-28 15:56:22,876:INFO:Logical Core: 16
+2024-10-28 15:56:22,876:INFO:Checking libraries
+2024-10-28 15:56:22,876:INFO:System:
+2024-10-28 15:56:22,876:INFO:    python: 3.8.20 (default, Oct  3 2024, 15:19:54) [MSC v.1929 64 bit (AMD64)]
+2024-10-28 15:56:22,876:INFO:executable: C:\ProgramData\anaconda3\envs\insurance-prod\python.exe
+2024-10-28 15:56:22,876:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-10-28 15:56:22,876:INFO:PyCaret required dependencies:
+2024-10-28 15:56:22,995:INFO:                 pip: 24.2
+2024-10-28 15:56:22,995:INFO:          setuptools: 75.1.0
+2024-10-28 15:56:22,995:INFO:             pycaret: 3.2.0
+2024-10-28 15:56:22,995:INFO:             IPython: 8.12.3
+2024-10-28 15:56:22,995:INFO:          ipywidgets: 8.1.5
+2024-10-28 15:56:22,995:INFO:                tqdm: 4.66.5
+2024-10-28 15:56:22,995:INFO:               numpy: 1.21.2
+2024-10-28 15:56:22,997:INFO:              pandas: 1.5.3
+2024-10-28 15:56:22,997:INFO:              jinja2: 3.1.4
+2024-10-28 15:56:22,997:INFO:               scipy: 1.10.1
+2024-10-28 15:56:22,997:INFO:              joblib: 1.0.0
+2024-10-28 15:56:22,997:INFO:             sklearn: 1.2.2
+2024-10-28 15:56:22,997:INFO:                pyod: 2.0.2
+2024-10-28 15:56:22,997:INFO:            imblearn: 0.12.4
+2024-10-28 15:56:22,997:INFO:   category_encoders: 2.6.4
+2024-10-28 15:56:22,997:INFO:            lightgbm: 4.5.0
+2024-10-28 15:56:22,997:INFO:               numba: 0.58.0
+2024-10-28 15:56:22,997:INFO:            requests: 2.32.3
+2024-10-28 15:56:22,997:INFO:          matplotlib: 3.6.0
+2024-10-28 15:56:22,997:INFO:          scikitplot: 0.3.7
+2024-10-28 15:56:22,997:INFO:         yellowbrick: 1.5
+2024-10-28 15:56:22,997:INFO:              plotly: 5.24.1
+2024-10-28 15:56:22,997:INFO:    plotly-resampler: Not installed
+2024-10-28 15:56:22,997:INFO:             kaleido: 0.2.1
+2024-10-28 15:56:22,997:INFO:           schemdraw: 0.15
+2024-10-28 15:56:22,997:INFO:         statsmodels: 0.14.1
+2024-10-28 15:56:22,997:INFO:              sktime: 0.21.1
+2024-10-28 15:56:22,997:INFO:               tbats: 1.1.3
+2024-10-28 15:56:22,997:INFO:            pmdarima: 2.0.4
+2024-10-28 15:56:22,997:INFO:              psutil: 6.0.0
+2024-10-28 15:56:22,997:INFO:          markupsafe: 2.1.5
+2024-10-28 15:56:22,997:INFO:             pickle5: Not installed
+2024-10-28 15:56:22,997:INFO:         cloudpickle: 3.1.0
+2024-10-28 15:56:22,997:INFO:         deprecation: 2.1.0
+2024-10-28 15:56:22,997:INFO:              xxhash: 3.5.0
+2024-10-28 15:56:22,997:INFO:           wurlitzer: Not installed
+2024-10-28 15:56:22,997:INFO:PyCaret optional dependencies:
+2024-10-28 15:56:23,086:INFO:                shap: Not installed
+2024-10-28 15:56:23,087:INFO:           interpret: Not installed
+2024-10-28 15:56:23,087:INFO:                umap: 0.5.6
+2024-10-28 15:56:23,087:INFO:     ydata_profiling: 4.5.1
+2024-10-28 15:56:23,087:INFO:  explainerdashboard: Not installed
+2024-10-28 15:56:23,087:INFO:             autoviz: Not installed
+2024-10-28 15:56:23,087:INFO:           fairlearn: Not installed
+2024-10-28 15:56:23,087:INFO:          deepchecks: Not installed
+2024-10-28 15:56:23,087:INFO:             xgboost: 2.1.1
+2024-10-28 15:56:23,087:INFO:            catboost: 1.2.7
+2024-10-28 15:56:23,087:INFO:              kmodes: 0.12.2
+2024-10-28 15:56:23,087:INFO:             mlxtend: 0.19.0
+2024-10-28 15:56:23,087:INFO:       statsforecast: Not installed
+2024-10-28 15:56:23,087:INFO:        tune_sklearn: Not installed
+2024-10-28 15:56:23,087:INFO:                 ray: Not installed
+2024-10-28 15:56:23,087:INFO:            hyperopt: Not installed
+2024-10-28 15:56:23,087:INFO:              optuna: Not installed
+2024-10-28 15:56:23,087:INFO:               skopt: Not installed
+2024-10-28 15:56:23,087:INFO:              mlflow: 2.17.0
+2024-10-28 15:56:23,087:INFO:              gradio: Not installed
+2024-10-28 15:56:23,087:INFO:             fastapi: Not installed
+2024-10-28 15:56:23,087:INFO:             uvicorn: Not installed
+2024-10-28 15:56:23,087:INFO:              m2cgen: Not installed
+2024-10-28 15:56:23,087:INFO:           evidently: Not installed
+2024-10-28 15:56:23,087:INFO:               fugue: Not installed
+2024-10-28 15:56:23,087:INFO:           streamlit: 1.39.0
+2024-10-28 15:56:23,087:INFO:             prophet: Not installed
+2024-10-28 15:56:23,087:INFO:None
+2024-10-28 15:56:23,087:INFO:Set up data.
+2024-10-28 15:56:23,097:INFO:Set up folding strategy.
+2024-10-28 15:56:23,097:INFO:Set up train/test split.
+2024-10-28 15:56:23,101:INFO:Set up index.
+2024-10-28 15:56:23,102:INFO:Assigning column types.
+2024-10-28 15:56:23,104:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-10-28 15:56:23,104:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-10-28 15:56:23,112:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-10-28 15:56:23,119:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-10-28 15:56:23,155:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-28 15:56:23,180:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-28 15:56:23,180:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-28 15:56:23,182:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-28 15:56:23,331:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-10-28 15:56:23,334:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-10-28 15:56:23,337:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-10-28 15:56:23,370:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-28 15:56:23,396:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-28 15:56:23,396:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-28 15:56:23,398:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-28 15:56:23,399:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2024-10-28 15:56:23,401:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-10-28 15:56:23,404:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-10-28 15:56:23,440:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-28 15:56:23,466:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-28 15:56:23,466:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-28 15:56:23,468:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-28 15:56:23,471:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-10-28 15:56:23,474:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-10-28 15:56:23,511:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-28 15:56:23,540:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-28 15:56:23,540:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-28 15:56:23,545:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-28 15:56:23,545:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2024-10-28 15:56:23,553:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-10-28 15:56:23,585:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-28 15:56:23,610:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-28 15:56:23,611:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-28 15:56:23,612:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-28 15:56:23,618:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-10-28 15:56:23,654:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-28 15:56:23,680:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-28 15:56:23,680:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-28 15:56:23,682:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-28 15:56:23,682:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2024-10-28 15:56:23,720:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-28 15:56:23,746:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-28 15:56:23,746:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-28 15:56:23,748:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-28 15:56:23,786:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-28 15:56:23,814:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-28 15:56:23,814:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-28 15:56:23,816:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-28 15:56:23,816:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-10-28 15:56:23,855:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-28 15:56:23,883:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-28 15:56:23,884:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-28 15:56:23,928:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-28 15:56:23,961:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-28 15:56:23,963:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-28 15:56:23,963:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2024-10-28 15:56:24,030:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-28 15:56:24,031:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-28 15:56:24,101:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-28 15:56:24,103:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-28 15:56:24,111:INFO:Preparing preprocessing pipeline...
+2024-10-28 15:56:24,111:INFO:Set up simple imputation.
+2024-10-28 15:56:24,114:INFO:Set up encoding of ordinal features.
+2024-10-28 15:56:24,116:INFO:Set up encoding of categorical features.
+2024-10-28 15:56:24,169:INFO:Finished creating preprocessing pipeline.
+2024-10-28 15:56:24,203:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\al\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrap...
+                                                                     'smoker'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True)))])
+2024-10-28 15:56:24,203:INFO:Creating final display dataframe.
+2024-10-28 15:56:24,344:INFO:Setup _display_container:                     Description             Value
+0                    Session id              5557
+1                        Target           charges
+2                   Target type        Regression
+3           Original data shape         (1338, 7)
+4        Transformed data shape        (1338, 10)
+5   Transformed train set shape         (936, 10)
+6    Transformed test set shape         (402, 10)
+7              Ordinal features                 2
+8              Numeric features                 3
+9          Categorical features                 3
+10                   Preprocess              True
+11              Imputation type            simple
+12           Numeric imputation              mean
+13       Categorical imputation              mode
+14     Maximum one-hot encoding                25
+15              Encoding method              None
+16               Fold Generator             KFold
+17                  Fold Number                10
+18                     CPU Jobs                -1
+19                      Use GPU             False
+20               Log Experiment             False
+21              Experiment Name  reg-default-name
+22                          USI              5460
+2024-10-28 15:56:24,419:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-28 15:56:24,421:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-28 15:56:24,488:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-28 15:56:24,490:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-28 15:56:24,491:INFO:setup() successfully completed in 1.63s...............
+2024-10-28 15:56:24,491:INFO:Initializing create_model()
+2024-10-28 15:56:24,491:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001E5185165B0>, estimator=lr, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-10-28 15:56:24,491:INFO:Checking exceptions
+2024-10-28 15:56:24,495:INFO:Importing libraries
+2024-10-28 15:56:24,495:INFO:Copying training dataset
+2024-10-28 15:56:24,497:INFO:Defining folds
+2024-10-28 15:56:24,497:INFO:Declaring metric variables
+2024-10-28 15:56:24,498:INFO:Importing untrained model
+2024-10-28 15:56:24,498:INFO:Linear Regression Imported successfully
+2024-10-28 15:56:24,498:INFO:Starting cross validation
+2024-10-28 15:56:24,503:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-10-28 15:56:27,867:INFO:Calculating mean and std
+2024-10-28 15:56:27,868:INFO:Creating metrics dataframe
+2024-10-28 15:56:27,870:INFO:Finalizing model
+2024-10-28 15:56:27,907:INFO:Uploading results into container
+2024-10-28 15:56:27,908:INFO:Uploading model into container now
+2024-10-28 15:56:27,914:INFO:_master_model_container: 1
+2024-10-28 15:56:27,914:INFO:_display_container: 2
+2024-10-28 15:56:27,914:INFO:LinearRegression(n_jobs=-1)
+2024-10-28 15:56:27,914:INFO:create_model() successfully completed......................................
+2024-10-28 15:56:28,018:INFO:Initializing save_model()
+2024-10-28 15:56:28,018:INFO:save_model(model=LinearRegression(n_jobs=-1), model_name=/root/insurance_predict/deployment_28042020_v2, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\al\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrap...
+                                                                     'smoker'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True)))]), verbose=True, use_case=MLUsecase.REGRESSION, kwargs={})
+2024-10-28 15:56:28,018:INFO:Adding model into prep_pipe
+2024-10-28 15:56:57,333:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-28 15:56:57,334:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-28 15:56:57,334:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-28 15:56:57,334:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-28 15:56:57,449:INFO:PyCaret RegressionExperiment
+2024-10-28 15:56:57,449:INFO:Logging name: reg-default-name
+2024-10-28 15:56:57,449:INFO:ML Usecase: MLUsecase.REGRESSION
+2024-10-28 15:56:57,450:INFO:version 3.2.0
+2024-10-28 15:56:57,450:INFO:Initializing setup()
+2024-10-28 15:56:57,450:INFO:self.USI: 40ee
+2024-10-28 15:56:57,450:INFO:self._variable_keys: {'transform_target_param', 'html_param', 'X_train', 'y_train', 'USI', 'X', 'y_test', 'logging_param', 'fold_generator', 'gpu_n_jobs_param', 'log_plots_param', 'y', 'data', 'target_param', 'exp_name_log', 'idx', 'exp_id', 'n_jobs_param', 'X_test', '_ml_usecase', 'fold_shuffle_param', 'seed', '_available_plots', 'gpu_param', 'memory', 'fold_groups_param', 'pipeline'}
+2024-10-28 15:56:57,450:INFO:Checking environment
+2024-10-28 15:56:57,450:INFO:python_version: 3.8.20
+2024-10-28 15:56:57,450:INFO:python_build: ('default', 'Oct  3 2024 15:19:54')
+2024-10-28 15:56:57,450:INFO:machine: AMD64
+2024-10-28 15:56:57,457:INFO:platform: Windows-10-10.0.22631-SP0
+2024-10-28 15:56:57,462:INFO:Memory: svmem(total=34071240704, available=19627044864, percent=42.4, used=14444195840, free=19627044864)
+2024-10-28 15:56:57,462:INFO:Physical Core: 12
+2024-10-28 15:56:57,462:INFO:Logical Core: 16
+2024-10-28 15:56:57,462:INFO:Checking libraries
+2024-10-28 15:56:57,462:INFO:System:
+2024-10-28 15:56:57,462:INFO:    python: 3.8.20 (default, Oct  3 2024, 15:19:54) [MSC v.1929 64 bit (AMD64)]
+2024-10-28 15:56:57,462:INFO:executable: C:\ProgramData\anaconda3\envs\insurance-prod\python.exe
+2024-10-28 15:56:57,462:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-10-28 15:56:57,462:INFO:PyCaret required dependencies:
+2024-10-28 15:56:57,555:INFO:                 pip: 24.2
+2024-10-28 15:56:57,556:INFO:          setuptools: 75.1.0
+2024-10-28 15:56:57,556:INFO:             pycaret: 3.2.0
+2024-10-28 15:56:57,556:INFO:             IPython: 8.12.3
+2024-10-28 15:56:57,556:INFO:          ipywidgets: 8.1.5
+2024-10-28 15:56:57,556:INFO:                tqdm: 4.66.5
+2024-10-28 15:56:57,556:INFO:               numpy: 1.21.2
+2024-10-28 15:56:57,556:INFO:              pandas: 1.5.3
+2024-10-28 15:56:57,556:INFO:              jinja2: 3.1.4
+2024-10-28 15:56:57,556:INFO:               scipy: 1.10.1
+2024-10-28 15:56:57,556:INFO:              joblib: 1.0.0
+2024-10-28 15:56:57,556:INFO:             sklearn: 1.2.2
+2024-10-28 15:56:57,556:INFO:                pyod: 2.0.2
+2024-10-28 15:56:57,556:INFO:            imblearn: 0.12.4
+2024-10-28 15:56:57,556:INFO:   category_encoders: 2.6.4
+2024-10-28 15:56:57,556:INFO:            lightgbm: 4.5.0
+2024-10-28 15:56:57,556:INFO:               numba: 0.58.0
+2024-10-28 15:56:57,556:INFO:            requests: 2.32.3
+2024-10-28 15:56:57,556:INFO:          matplotlib: 3.6.0
+2024-10-28 15:56:57,556:INFO:          scikitplot: 0.3.7
+2024-10-28 15:56:57,556:INFO:         yellowbrick: 1.5
+2024-10-28 15:56:57,556:INFO:              plotly: 5.24.1
+2024-10-28 15:56:57,556:INFO:    plotly-resampler: Not installed
+2024-10-28 15:56:57,556:INFO:             kaleido: 0.2.1
+2024-10-28 15:56:57,556:INFO:           schemdraw: 0.15
+2024-10-28 15:56:57,556:INFO:         statsmodels: 0.14.1
+2024-10-28 15:56:57,556:INFO:              sktime: 0.21.1
+2024-10-28 15:56:57,556:INFO:               tbats: 1.1.3
+2024-10-28 15:56:57,556:INFO:            pmdarima: 2.0.4
+2024-10-28 15:56:57,556:INFO:              psutil: 6.0.0
+2024-10-28 15:56:57,556:INFO:          markupsafe: 2.1.5
+2024-10-28 15:56:57,556:INFO:             pickle5: Not installed
+2024-10-28 15:56:57,556:INFO:         cloudpickle: 3.1.0
+2024-10-28 15:56:57,556:INFO:         deprecation: 2.1.0
+2024-10-28 15:56:57,556:INFO:              xxhash: 3.5.0
+2024-10-28 15:56:57,557:INFO:           wurlitzer: Not installed
+2024-10-28 15:56:57,557:INFO:PyCaret optional dependencies:
+2024-10-28 15:56:57,584:INFO:                shap: Not installed
+2024-10-28 15:56:57,584:INFO:           interpret: Not installed
+2024-10-28 15:56:57,584:INFO:                umap: 0.5.6
+2024-10-28 15:56:57,584:INFO:     ydata_profiling: 4.5.1
+2024-10-28 15:56:57,584:INFO:  explainerdashboard: Not installed
+2024-10-28 15:56:57,584:INFO:             autoviz: Not installed
+2024-10-28 15:56:57,584:INFO:           fairlearn: Not installed
+2024-10-28 15:56:57,584:INFO:          deepchecks: Not installed
+2024-10-28 15:56:57,585:INFO:             xgboost: 2.1.1
+2024-10-28 15:56:57,585:INFO:            catboost: 1.2.7
+2024-10-28 15:56:57,585:INFO:              kmodes: 0.12.2
+2024-10-28 15:56:57,585:INFO:             mlxtend: 0.19.0
+2024-10-28 15:56:57,585:INFO:       statsforecast: Not installed
+2024-10-28 15:56:57,585:INFO:        tune_sklearn: Not installed
+2024-10-28 15:56:57,585:INFO:                 ray: Not installed
+2024-10-28 15:56:57,585:INFO:            hyperopt: Not installed
+2024-10-28 15:56:57,585:INFO:              optuna: Not installed
+2024-10-28 15:56:57,585:INFO:               skopt: Not installed
+2024-10-28 15:56:57,585:INFO:              mlflow: 2.17.0
+2024-10-28 15:56:57,585:INFO:              gradio: Not installed
+2024-10-28 15:56:57,585:INFO:             fastapi: Not installed
+2024-10-28 15:56:57,585:INFO:             uvicorn: Not installed
+2024-10-28 15:56:57,585:INFO:              m2cgen: Not installed
+2024-10-28 15:56:57,586:INFO:           evidently: Not installed
+2024-10-28 15:56:57,586:INFO:               fugue: Not installed
+2024-10-28 15:56:57,586:INFO:           streamlit: 1.39.0
+2024-10-28 15:56:57,586:INFO:             prophet: Not installed
+2024-10-28 15:56:57,586:INFO:None
+2024-10-28 15:56:57,586:INFO:Set up data.
+2024-10-28 15:56:57,591:INFO:Set up folding strategy.
+2024-10-28 15:56:57,592:INFO:Set up train/test split.
+2024-10-28 15:56:57,594:INFO:Set up index.
+2024-10-28 15:56:57,594:INFO:Assigning column types.
+2024-10-28 15:56:57,596:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-10-28 15:56:57,596:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-10-28 15:56:57,601:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-10-28 15:56:57,604:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-10-28 15:56:57,656:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-28 15:56:57,689:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-28 15:56:57,690:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-28 15:56:57,692:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-28 15:56:57,710:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-10-28 15:56:57,712:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-10-28 15:56:57,715:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-10-28 15:56:57,750:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-28 15:56:57,776:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-28 15:56:57,777:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-28 15:56:57,779:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-28 15:56:57,779:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2024-10-28 15:56:57,782:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-10-28 15:56:57,785:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-10-28 15:56:57,817:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-28 15:56:57,845:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-28 15:56:57,846:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-28 15:56:57,847:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-28 15:56:57,852:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-10-28 15:56:57,855:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-10-28 15:56:57,888:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-28 15:56:57,916:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-28 15:56:57,916:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-28 15:56:57,918:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-28 15:56:57,918:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2024-10-28 15:56:57,924:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-10-28 15:56:57,963:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-28 15:56:57,988:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-28 15:56:57,988:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-28 15:56:57,990:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-28 15:56:57,995:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-10-28 15:56:58,031:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-28 15:56:58,058:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-28 15:56:58,058:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-28 15:56:58,060:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-28 15:56:58,060:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2024-10-28 15:56:58,100:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-28 15:56:58,127:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-28 15:56:58,128:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-28 15:56:58,129:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-28 15:56:58,168:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-28 15:56:58,195:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-28 15:56:58,195:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-28 15:56:58,197:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-28 15:56:58,197:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-10-28 15:56:58,245:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-28 15:56:58,270:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-28 15:56:58,272:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-28 15:56:58,312:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-10-28 15:56:58,338:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-28 15:56:58,340:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-28 15:56:58,340:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2024-10-28 15:56:58,407:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-28 15:56:58,409:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-28 15:56:58,476:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-28 15:56:58,478:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-28 15:56:58,480:INFO:Preparing preprocessing pipeline...
+2024-10-28 15:56:58,480:INFO:Set up simple imputation.
+2024-10-28 15:56:58,482:INFO:Set up encoding of ordinal features.
+2024-10-28 15:56:58,484:INFO:Set up encoding of categorical features.
+2024-10-28 15:56:58,544:INFO:Finished creating preprocessing pipeline.
+2024-10-28 15:56:58,573:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\al\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrap...
+                                                                     'smoker'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True)))])
+2024-10-28 15:56:58,573:INFO:Creating final display dataframe.
+2024-10-28 15:56:58,720:INFO:Setup _display_container:                     Description             Value
+0                    Session id              5213
+1                        Target           charges
+2                   Target type        Regression
+3           Original data shape         (1338, 7)
+4        Transformed data shape        (1338, 10)
+5   Transformed train set shape         (936, 10)
+6    Transformed test set shape         (402, 10)
+7              Ordinal features                 2
+8              Numeric features                 3
+9          Categorical features                 3
+10                   Preprocess              True
+11              Imputation type            simple
+12           Numeric imputation              mean
+13       Categorical imputation              mode
+14     Maximum one-hot encoding                25
+15              Encoding method              None
+16               Fold Generator             KFold
+17                  Fold Number                10
+18                     CPU Jobs                -1
+19                      Use GPU             False
+20               Log Experiment             False
+21              Experiment Name  reg-default-name
+22                          USI              40ee
+2024-10-28 15:56:58,792:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-28 15:56:58,794:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-28 15:56:58,862:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-10-28 15:56:58,863:INFO:Soft dependency imported: catboost: 1.2.7
+2024-10-28 15:56:58,864:INFO:setup() successfully completed in 1.42s...............
+2024-10-28 15:56:58,864:INFO:Initializing create_model()
+2024-10-28 15:56:58,864:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000228EABA65B0>, estimator=lr, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-10-28 15:56:58,864:INFO:Checking exceptions
+2024-10-28 15:56:58,866:INFO:Importing libraries
+2024-10-28 15:56:58,866:INFO:Copying training dataset
+2024-10-28 15:56:58,869:INFO:Defining folds
+2024-10-28 15:56:58,869:INFO:Declaring metric variables
+2024-10-28 15:56:58,869:INFO:Importing untrained model
+2024-10-28 15:56:58,869:INFO:Linear Regression Imported successfully
+2024-10-28 15:56:58,869:INFO:Starting cross validation
+2024-10-28 15:56:58,873:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-10-28 15:57:02,294:INFO:Calculating mean and std
+2024-10-28 15:57:02,295:INFO:Creating metrics dataframe
+2024-10-28 15:57:02,298:INFO:Finalizing model
+2024-10-28 15:57:02,332:INFO:Uploading results into container
+2024-10-28 15:57:02,333:INFO:Uploading model into container now
+2024-10-28 15:57:02,340:INFO:_master_model_container: 1
+2024-10-28 15:57:02,340:INFO:_display_container: 2
+2024-10-28 15:57:02,341:INFO:LinearRegression(n_jobs=-1)
+2024-10-28 15:57:02,341:INFO:create_model() successfully completed......................................
+2024-10-28 15:57:02,431:INFO:Initializing save_model()
+2024-10-28 15:57:02,431:INFO:save_model(model=LinearRegression(n_jobs=-1), model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\al\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrap...
+                                                                     'smoker'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True)))]), verbose=True, use_case=MLUsecase.REGRESSION, kwargs={})
+2024-10-28 15:57:02,431:INFO:Adding model into prep_pipe
+2024-10-28 15:57:02,437:INFO:D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2.pkl saved in current working directory
+2024-10-28 15:57:02,472:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker'],
+                                    transfor...
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', LinearRegression(n_jobs=-1))])
+2024-10-28 15:57:02,472:INFO:save_model() successfully completed......................................
+2025-02-19 23:30:22,962:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-19 23:30:22,963:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-19 23:30:22,963:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-19 23:30:22,963:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-19 23:30:23,608:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-25 10:12:07,845:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 10:12:07,846:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 10:12:07,846:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 10:12:07,846:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 10:12:08,102:INFO:Initializing load_model()
+2025-02-25 10:12:08,102:INFO:load_model(model_name=/root/insurance_predict/deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2025-02-25 10:27:33,091:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 10:27:33,091:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 10:27:33,091:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 10:27:33,096:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 10:27:33,285:INFO:Initializing load_model()
+2025-02-25 10:27:33,285:INFO:load_model(model_name=/root/insurance_predict/deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2025-02-25 10:33:04,338:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 10:33:04,340:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 10:33:04,341:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 10:33:04,341:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 10:33:04,566:INFO:Initializing load_model()
+2025-02-25 10:33:04,566:INFO:load_model(model_name=/root/insurance_predict/deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2025-02-25 10:45:48,046:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 10:45:48,046:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 10:45:48,046:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 10:45:48,046:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 11:40:06,125:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 11:40:06,126:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 11:40:06,126:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 11:40:06,126:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 11:43:19,347:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 11:43:19,347:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 11:43:19,347:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 11:43:19,348:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 11:51:59,683:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 11:51:59,684:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 11:51:59,684:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 11:51:59,684:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 11:57:52,646:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 11:57:52,647:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 11:57:52,647:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 11:57:52,648:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 11:57:52,838:INFO:Initializing load_model()
+2025-02-25 11:57:52,838:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2.pkl, platform=None, authentication=None, verbose=True)
+2025-02-25 11:58:34,035:INFO:Initializing load_model()
+2025-02-25 11:58:34,035:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2025-02-25 11:58:40,275:INFO:Initializing load_model()
+2025-02-25 11:58:40,275:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2025-02-25 11:58:43,041:INFO:Initializing predict_model()
+2025-02-25 11:58:43,041:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001BD44FAB160>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker'],
+                                    transfor...
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001BD7E405D30>)
+2025-02-25 11:58:43,041:INFO:Checking exceptions
+2025-02-25 11:58:43,041:INFO:Preloading libraries
+2025-02-25 11:58:43,042:INFO:Set up data.
+2025-02-25 11:58:43,053:INFO:Set up index.
+2025-02-25 12:00:29,264:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 12:00:29,265:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 12:00:29,265:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 12:00:29,266:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 12:00:29,444:INFO:Initializing load_model()
+2025-02-25 12:00:29,445:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2025-02-25 12:00:40,960:INFO:Initializing load_model()
+2025-02-25 12:00:40,960:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2025-02-25 12:00:48,936:INFO:Initializing load_model()
+2025-02-25 12:00:48,938:INFO:load_model(model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, platform=None, authentication=None, verbose=True)
+2025-02-25 12:00:51,657:INFO:Initializing predict_model()
+2025-02-25 12:00:51,658:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000028A5BB68CD0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker'],
+                                    transfor...
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000028A5BB6C670>)
+2025-02-25 12:00:51,658:INFO:Checking exceptions
+2025-02-25 12:00:51,658:INFO:Preloading libraries
+2025-02-25 12:00:51,658:INFO:Set up data.
+2025-02-25 12:00:51,666:INFO:Set up index.
+2025-02-25 12:05:03,599:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 12:05:03,600:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 12:05:03,600:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 12:05:03,600:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-02-25 12:05:03,769:INFO:PyCaret RegressionExperiment
+2025-02-25 12:05:03,769:INFO:Logging name: reg-default-name
+2025-02-25 12:05:03,769:INFO:ML Usecase: MLUsecase.REGRESSION
+2025-02-25 12:05:03,769:INFO:version 3.2.0
+2025-02-25 12:05:03,769:INFO:Initializing setup()
+2025-02-25 12:05:03,769:INFO:self.USI: 0e59
+2025-02-25 12:05:03,769:INFO:self._variable_keys: {'y', 'target_param', 'y_test', 'html_param', 'n_jobs_param', 'fold_generator', '_available_plots', 'memory', 'transform_target_param', 'exp_name_log', 'X', 'pipeline', 'fold_shuffle_param', 'USI', 'X_test', 'gpu_n_jobs_param', 'exp_id', 'logging_param', 'idx', 'gpu_param', 'y_train', 'log_plots_param', '_ml_usecase', 'fold_groups_param', 'seed', 'data', 'X_train'}
+2025-02-25 12:05:03,769:INFO:Checking environment
+2025-02-25 12:05:03,769:INFO:python_version: 3.8.20
+2025-02-25 12:05:03,769:INFO:python_build: ('default', 'Oct  3 2024 15:19:54')
+2025-02-25 12:05:03,769:INFO:machine: AMD64
+2025-02-25 12:05:03,782:INFO:platform: Windows-10-10.0.26100-SP0
+2025-02-25 12:05:03,806:INFO:Memory: svmem(total=34071240704, available=12012535808, percent=64.7, used=22058704896, free=12012535808)
+2025-02-25 12:05:03,808:INFO:Physical Core: 12
+2025-02-25 12:05:03,808:INFO:Logical Core: 16
+2025-02-25 12:05:03,808:INFO:Checking libraries
+2025-02-25 12:05:03,808:INFO:System:
+2025-02-25 12:05:03,808:INFO:    python: 3.8.20 (default, Oct  3 2024, 15:19:54) [MSC v.1929 64 bit (AMD64)]
+2025-02-25 12:05:03,808:INFO:executable: C:\ProgramData\anaconda3\envs\insurance-prod\python.exe
+2025-02-25 12:05:03,808:INFO:   machine: Windows-10-10.0.26100-SP0
+2025-02-25 12:05:03,808:INFO:PyCaret required dependencies:
+2025-02-25 12:05:03,937:INFO:                 pip: 24.2
+2025-02-25 12:05:03,938:INFO:          setuptools: 75.1.0
+2025-02-25 12:05:03,938:INFO:             pycaret: 3.2.0
+2025-02-25 12:05:03,938:INFO:             IPython: 8.12.3
+2025-02-25 12:05:03,938:INFO:          ipywidgets: 8.1.5
+2025-02-25 12:05:03,938:INFO:                tqdm: 4.66.5
+2025-02-25 12:05:03,938:INFO:               numpy: 1.21.2
+2025-02-25 12:05:03,938:INFO:              pandas: 1.5.3
+2025-02-25 12:05:03,938:INFO:              jinja2: 3.1.4
+2025-02-25 12:05:03,938:INFO:               scipy: 1.10.1
+2025-02-25 12:05:03,938:INFO:              joblib: 1.0.0
+2025-02-25 12:05:03,938:INFO:             sklearn: 1.2.2
+2025-02-25 12:05:03,938:INFO:                pyod: 2.0.2
+2025-02-25 12:05:03,938:INFO:            imblearn: 0.12.4
+2025-02-25 12:05:03,938:INFO:   category_encoders: 2.6.4
+2025-02-25 12:05:03,938:INFO:            lightgbm: 4.5.0
+2025-02-25 12:05:03,938:INFO:               numba: 0.58.0
+2025-02-25 12:05:03,938:INFO:            requests: 2.32.3
+2025-02-25 12:05:03,938:INFO:          matplotlib: 3.6.0
+2025-02-25 12:05:03,938:INFO:          scikitplot: 0.3.7
+2025-02-25 12:05:03,938:INFO:         yellowbrick: 1.5
+2025-02-25 12:05:03,938:INFO:              plotly: 5.24.1
+2025-02-25 12:05:03,938:INFO:    plotly-resampler: Not installed
+2025-02-25 12:05:03,938:INFO:             kaleido: 0.2.1
+2025-02-25 12:05:03,938:INFO:           schemdraw: 0.15
+2025-02-25 12:05:03,938:INFO:         statsmodels: 0.14.1
+2025-02-25 12:05:03,938:INFO:              sktime: 0.21.1
+2025-02-25 12:05:03,938:INFO:               tbats: 1.1.3
+2025-02-25 12:05:03,938:INFO:            pmdarima: 2.0.4
+2025-02-25 12:05:03,938:INFO:              psutil: 6.0.0
+2025-02-25 12:05:03,938:INFO:          markupsafe: 2.1.5
+2025-02-25 12:05:03,938:INFO:             pickle5: Not installed
+2025-02-25 12:05:03,938:INFO:         cloudpickle: 3.1.0
+2025-02-25 12:05:03,938:INFO:         deprecation: 2.1.0
+2025-02-25 12:05:03,938:INFO:              xxhash: 3.5.0
+2025-02-25 12:05:03,939:INFO:           wurlitzer: Not installed
+2025-02-25 12:05:03,939:INFO:PyCaret optional dependencies:
+2025-02-25 12:05:04,038:INFO:                shap: Not installed
+2025-02-25 12:05:04,038:INFO:           interpret: Not installed
+2025-02-25 12:05:04,038:INFO:                umap: 0.5.6
+2025-02-25 12:05:04,038:INFO:     ydata_profiling: 4.5.1
+2025-02-25 12:05:04,038:INFO:  explainerdashboard: Not installed
+2025-02-25 12:05:04,038:INFO:             autoviz: Not installed
+2025-02-25 12:05:04,039:INFO:           fairlearn: Not installed
+2025-02-25 12:05:04,039:INFO:          deepchecks: Not installed
+2025-02-25 12:05:04,039:INFO:             xgboost: 2.1.1
+2025-02-25 12:05:04,039:INFO:            catboost: 1.2.7
+2025-02-25 12:05:04,039:INFO:              kmodes: 0.12.2
+2025-02-25 12:05:04,039:INFO:             mlxtend: 0.19.0
+2025-02-25 12:05:04,039:INFO:       statsforecast: Not installed
+2025-02-25 12:05:04,039:INFO:        tune_sklearn: Not installed
+2025-02-25 12:05:04,039:INFO:                 ray: Not installed
+2025-02-25 12:05:04,039:INFO:            hyperopt: Not installed
+2025-02-25 12:05:04,039:INFO:              optuna: Not installed
+2025-02-25 12:05:04,039:INFO:               skopt: Not installed
+2025-02-25 12:05:04,039:INFO:              mlflow: 2.17.0
+2025-02-25 12:05:04,039:INFO:              gradio: Not installed
+2025-02-25 12:05:04,039:INFO:             fastapi: Not installed
+2025-02-25 12:05:04,039:INFO:             uvicorn: Not installed
+2025-02-25 12:05:04,039:INFO:              m2cgen: Not installed
+2025-02-25 12:05:04,039:INFO:           evidently: Not installed
+2025-02-25 12:05:04,039:INFO:               fugue: Not installed
+2025-02-25 12:05:04,039:INFO:           streamlit: 1.39.0
+2025-02-25 12:05:04,039:INFO:             prophet: Not installed
+2025-02-25 12:05:04,039:INFO:None
+2025-02-25 12:05:04,039:INFO:Set up data.
+2025-02-25 12:05:04,045:INFO:Set up folding strategy.
+2025-02-25 12:05:04,045:INFO:Set up train/test split.
+2025-02-25 12:05:04,052:INFO:Set up index.
+2025-02-25 12:05:04,052:INFO:Assigning column types.
+2025-02-25 12:05:04,057:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2025-02-25 12:05:04,058:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2025-02-25 12:05:04,061:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2025-02-25 12:05:04,064:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2025-02-25 12:05:04,112:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-02-25 12:05:04,152:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-02-25 12:05:04,152:INFO:Soft dependency imported: xgboost: 2.1.1
+2025-02-25 12:05:04,155:INFO:Soft dependency imported: catboost: 1.2.7
+2025-02-25 12:05:04,338:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2025-02-25 12:05:04,342:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2025-02-25 12:05:04,345:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2025-02-25 12:05:04,391:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-02-25 12:05:04,426:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-02-25 12:05:04,427:INFO:Soft dependency imported: xgboost: 2.1.1
+2025-02-25 12:05:04,429:INFO:Soft dependency imported: catboost: 1.2.7
+2025-02-25 12:05:04,429:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2025-02-25 12:05:04,433:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2025-02-25 12:05:04,436:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2025-02-25 12:05:04,485:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-02-25 12:05:04,520:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-02-25 12:05:04,521:INFO:Soft dependency imported: xgboost: 2.1.1
+2025-02-25 12:05:04,523:INFO:Soft dependency imported: catboost: 1.2.7
+2025-02-25 12:05:04,528:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2025-02-25 12:05:04,533:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2025-02-25 12:05:04,576:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-02-25 12:05:04,606:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-02-25 12:05:04,607:INFO:Soft dependency imported: xgboost: 2.1.1
+2025-02-25 12:05:04,609:INFO:Soft dependency imported: catboost: 1.2.7
+2025-02-25 12:05:04,610:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2025-02-25 12:05:04,619:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2025-02-25 12:05:04,662:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-02-25 12:05:04,698:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-02-25 12:05:04,698:INFO:Soft dependency imported: xgboost: 2.1.1
+2025-02-25 12:05:04,700:INFO:Soft dependency imported: catboost: 1.2.7
+2025-02-25 12:05:04,709:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2025-02-25 12:05:04,758:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-02-25 12:05:04,795:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-02-25 12:05:04,796:INFO:Soft dependency imported: xgboost: 2.1.1
+2025-02-25 12:05:04,799:INFO:Soft dependency imported: catboost: 1.2.7
+2025-02-25 12:05:04,800:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2025-02-25 12:05:04,868:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-02-25 12:05:04,905:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-02-25 12:05:04,906:INFO:Soft dependency imported: xgboost: 2.1.1
+2025-02-25 12:05:04,908:INFO:Soft dependency imported: catboost: 1.2.7
+2025-02-25 12:05:04,959:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-02-25 12:05:05,002:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-02-25 12:05:05,002:INFO:Soft dependency imported: xgboost: 2.1.1
+2025-02-25 12:05:05,005:INFO:Soft dependency imported: catboost: 1.2.7
+2025-02-25 12:05:05,005:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2025-02-25 12:05:05,062:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-02-25 12:05:05,104:INFO:Soft dependency imported: xgboost: 2.1.1
+2025-02-25 12:05:05,106:INFO:Soft dependency imported: catboost: 1.2.7
+2025-02-25 12:05:05,171:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-02-25 12:05:05,206:INFO:Soft dependency imported: xgboost: 2.1.1
+2025-02-25 12:05:05,208:INFO:Soft dependency imported: catboost: 1.2.7
+2025-02-25 12:05:05,209:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2025-02-25 12:05:05,301:INFO:Soft dependency imported: xgboost: 2.1.1
+2025-02-25 12:05:05,303:INFO:Soft dependency imported: catboost: 1.2.7
+2025-02-25 12:05:05,402:INFO:Soft dependency imported: xgboost: 2.1.1
+2025-02-25 12:05:05,404:INFO:Soft dependency imported: catboost: 1.2.7
+2025-02-25 12:05:05,409:INFO:Preparing preprocessing pipeline...
+2025-02-25 12:05:05,409:INFO:Set up simple imputation.
+2025-02-25 12:05:05,413:INFO:Set up encoding of ordinal features.
+2025-02-25 12:05:05,415:INFO:Set up encoding of categorical features.
+2025-02-25 12:05:05,499:INFO:Finished creating preprocessing pipeline.
+2025-02-25 12:05:05,544:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\al\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrap...
+                                                                     'smoker'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True)))])
+2025-02-25 12:05:05,545:INFO:Creating final display dataframe.
+2025-02-25 12:05:05,790:INFO:Setup _display_container:                     Description             Value
+0                    Session id              1471
+1                        Target           charges
+2                   Target type        Regression
+3           Original data shape         (1338, 7)
+4        Transformed data shape        (1338, 10)
+5   Transformed train set shape         (936, 10)
+6    Transformed test set shape         (402, 10)
+7              Ordinal features                 2
+8              Numeric features                 3
+9          Categorical features                 3
+10                   Preprocess              True
+11              Imputation type            simple
+12           Numeric imputation              mean
+13       Categorical imputation              mode
+14     Maximum one-hot encoding                25
+15              Encoding method              None
+16               Fold Generator             KFold
+17                  Fold Number                10
+18                     CPU Jobs                -1
+19                      Use GPU             False
+20               Log Experiment             False
+21              Experiment Name  reg-default-name
+22                          USI              0e59
+2025-02-25 12:05:05,888:INFO:Soft dependency imported: xgboost: 2.1.1
+2025-02-25 12:05:05,890:INFO:Soft dependency imported: catboost: 1.2.7
+2025-02-25 12:05:05,978:INFO:Soft dependency imported: xgboost: 2.1.1
+2025-02-25 12:05:05,982:INFO:Soft dependency imported: catboost: 1.2.7
+2025-02-25 12:05:05,984:INFO:setup() successfully completed in 2.22s...............
+2025-02-25 12:05:05,985:INFO:Initializing create_model()
+2025-02-25 12:05:05,985:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000025BF15965E0>, estimator=lr, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-02-25 12:05:05,985:INFO:Checking exceptions
+2025-02-25 12:05:05,991:INFO:Importing libraries
+2025-02-25 12:05:05,992:INFO:Copying training dataset
+2025-02-25 12:05:05,995:INFO:Defining folds
+2025-02-25 12:05:05,995:INFO:Declaring metric variables
+2025-02-25 12:05:05,995:INFO:Importing untrained model
+2025-02-25 12:05:05,995:INFO:Linear Regression Imported successfully
+2025-02-25 12:05:05,996:INFO:Starting cross validation
+2025-02-25 12:05:06,005:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-02-25 12:05:12,393:INFO:Calculating mean and std
+2025-02-25 12:05:12,396:INFO:Creating metrics dataframe
+2025-02-25 12:05:12,400:INFO:Finalizing model
+2025-02-25 12:05:12,511:INFO:Uploading results into container
+2025-02-25 12:05:12,512:INFO:Uploading model into container now
+2025-02-25 12:05:12,522:INFO:_master_model_container: 1
+2025-02-25 12:05:12,522:INFO:_display_container: 2
+2025-02-25 12:05:12,523:INFO:LinearRegression(n_jobs=-1)
+2025-02-25 12:05:12,523:INFO:create_model() successfully completed......................................
+2025-02-25 12:05:12,664:INFO:Initializing save_model()
+2025-02-25 12:05:12,664:INFO:save_model(model=LinearRegression(n_jobs=-1), model_name=D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\al\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrap...
+                                                                     'smoker'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True)))]), verbose=True, use_case=MLUsecase.REGRESSION, kwargs={})
+2025-02-25 12:05:12,664:INFO:Adding model into prep_pipe
+2025-02-25 12:05:12,672:INFO:D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2.pkl saved in current working directory
+2025-02-25 12:05:12,717:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker'],
+                                    transfor...
+                                                               mapping=[{'col': 'sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'smoker',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': no     0
+yes    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', LinearRegression(n_jobs=-1))])
+2025-02-25 12:05:12,719:INFO:save_model() successfully completed......................................

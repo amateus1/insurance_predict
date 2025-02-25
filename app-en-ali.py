@@ -2,12 +2,24 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import requests
+import os
 from PIL import Image
 from io import BytesIO
 from pycaret.regression import load_model, predict_model
 
-# Adjusted the model path to the new project location
-model = load_model('/root/insurance_predict/deployment_28042020_v2')
+# Detect OS and set model path accordingly
+if os.name == "nt":  # Windows
+    model_path = r"D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2"
+else:  # Linux/macOS
+    model_path = "/root/insurance_predict/deployment_28042020_v2.pkl"
+
+# Try to load the model and handle errors
+try:
+    model = load_model(model_path)
+    st.success(f"Model loaded successfully from: {model_path}")
+except Exception as e:
+    st.error(f"Failed to load model: {e}")
+    model = None  # Ensure model is defined, even if it fails
 
 def predict(model, input_df):
     predictions_df = predict_model(estimator=model, data=input_df)
