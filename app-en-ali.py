@@ -11,7 +11,7 @@ from pycaret.regression import load_model, predict_model
 if os.name == "nt":  # Windows
     model_path = r"D:\MLOPS_PROJECTS\insurance-end-2-end\deployment_28042020_v2"
 else:  # Linux/macOS
-    model_path = "/root/insurance_predict/deployment_28042020_v2.pkl"
+    model_path = "/root/insurance_predict/deployment_28042020_v2"
 
 # Try to load the model and handle errors
 try:
